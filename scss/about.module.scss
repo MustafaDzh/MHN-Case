@@ -21,38 +21,41 @@
                 line-height: 110%;
                 text-transform: uppercase;
 
-                .desc{
+                .desc {
                     width: 68%;
-                    span{
+
+                    span {
                         color: #9DB8D8;
                     }
                 }
             }
 
-            &_statics{
+            &_statics {
                 display: flex;
                 gap: 115px;
 
-                &-left{
+                &-left {
                     width: 40%;
-                    .text{
+
+                    .text {
                         font-size: 20px;
                     }
                 }
 
-                &-right{
+                &-right {
                     display: flex;
                     gap: 132px;
 
-                    .right, .left{
-                        .title{
+                    .right,
+                    .left {
+                        .title {
                             font-size: 64px;
                             color: #9DB8D8;
                             line-height: 50px;
                             margin-bottom: 8px;
                         }
 
-                        .subtitle{
+                        .subtitle {
                             color: #2E3140;
                             font-size: 16px;
                             line-height: 150%;
@@ -61,6 +64,6 @@
                     }
                 }
             }
-            }
         }
     }
+}

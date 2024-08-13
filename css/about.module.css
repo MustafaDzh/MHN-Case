@@ -41,13 +41,15 @@
   display: flex;
   gap: 132px;
 }
-.section_about-wrapper--content_statics-right .right .title, .section_about-wrapper--content_statics-right .left .title {
+.section_about-wrapper--content_statics-right .right .title,
+.section_about-wrapper--content_statics-right .left .title {
   font-size: 64px;
   color: #9DB8D8;
   line-height: 50px;
   margin-bottom: 8px;
 }
-.section_about-wrapper--content_statics-right .right .subtitle, .section_about-wrapper--content_statics-right .left .subtitle {
+.section_about-wrapper--content_statics-right .right .subtitle,
+.section_about-wrapper--content_statics-right .left .subtitle {
   color: #2E3140;
   font-size: 16px;
   line-height: 150%;
