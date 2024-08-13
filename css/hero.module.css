@@ -39,6 +39,9 @@
   bottom: 50%;
   right: 12%;
   width: 506px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
 }
 @media screen and (max-width: 1440px) {
   .section_hero-wrapper--content {
@@ -87,6 +90,27 @@
 }
 .section_hero-wrapper--content_headline .title span {
   color: #D3FA6D;
+}
+.section_hero-wrapper--content_btn {
+  display: flex;
+  width: 174px;
+  height: 40px;
+  padding: 10px 25px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  border: 1.075px solid #D3FA6D;
+}
+.section_hero-wrapper--content_btn p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #D3FA6D;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 @keyframes moveBg {
