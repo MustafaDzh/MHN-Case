@@ -1,0 +1,102 @@
+.section_hero {
+    height: 85vh;
+    position: relative;
+
+    &-wrapper {
+        position: relative;
+        height: 100%;
+
+        &--background {
+            height: 80vh;
+            display: block;
+            margin: 0 auto;
+            background: url('../images/hero.png') no-repeat center center / cover;
+            position: relative;
+
+            &_line {
+                height: 80px;
+                width: 100%;
+                background: #D3FA6D;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                transform: rotate(-2deg) translateY(40px);
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background: url(/images/svg/hero-text.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%) rotate(2deg);
+                    // animation: moveBg 5s linear infinite;
+                }
+            }
+        }
+
+        &--content {
+            position: absolute;
+            bottom: 50%;
+            right: 12%;
+            width: 506px;
+
+            @media screen and (max-width:1440px) {
+                right: 0%;
+            }
+
+            @media screen and (max-width:1024px) {
+                display: flex;
+                justify-content: center;
+            }
+
+            @media screen and (max-width:480px) {
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            &_headline {
+                width: 30%;
+
+                .title {
+                    font-size: 90px;
+                    color: #fff;
+                    line-height: 90%;
+
+                    @media screen and (max-width:1440px) {
+                        font-size: 70px;
+                    }
+
+                    @media screen and (max-width:1440px) {
+                        font-size: 60px;
+                    }
+
+                    @media screen and (max-width:768px) {
+                        font-size: 50px;
+                    }
+
+                    @media screen and (max-width:768px) {
+                        font-size: 30px;
+                    }
+
+                    span {
+                        color: #D3FA6D;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes moveBg {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}
