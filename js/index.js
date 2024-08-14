@@ -1,7 +1,7 @@
 $(document).ready(function() {
     function checkVisibility() {
 
-        $('.section_about-wrapper--content_tape-image--wrapper_content').each(function() {
+        $('.section_about-wrapper--content_tape-content--image_wrapper').each(function() {
             var $this = $(this);
             var windowHeight = $(window).height();
             var scrollTop = $(window).scrollTop();

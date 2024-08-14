@@ -29,7 +29,7 @@
         max-width: calc(1440px - 2%);
         margin: 0 auto;
 
-        svg{
+        svg {
             @media screen and (max-width:480px) {
                 width: 200px;
                 height: 50px;
@@ -205,67 +205,18 @@
                     margin-top: 30px;
                 }
 
-                &-image {
-                    position: absolute;
-                    bottom: 0;
-                    left: 10%;
-
-                    @media screen and (max-width:768px) {
-                        left: 0%;
-                    }
-
-                    &--wrapper {
-                        position: relative;
-                        overflow: hidden;
-                        width: 518px;
-                        height: 419px;
-
-                        @media screen and (max-width:480px) {
-                            width: 300px;
-                            height: 150px;
-                        }
-
-                        &_content {
-                            position: absolute;
-                            bottom: 0;
-
-                            img {
-                                opacity: 0;
-                                transition: opacity 0.3s ease;
-
-                                @media screen and (max-width:768px) {
-                                    width: 80%;
-                                }
-                                &.animate {
-                                    animation: bounceIn 2s ease forwards;
-                                    opacity: 1;
-                                }
-                            }
-                        }
-                    }
-                }
-
                 &-content {
-                    width: 35%;
+                    margin: 0 auto;
                     display: flex;
-                    justify-content: flex-end;
-
-                    @media screen and (max-width:1280px) {
-                        width: 80%;
-                    }
-
-                    @media screen and (max-width:1024px) {
-                        width: 90%;
-                    }
-
-                    @media screen and (max-width:480px) {
-                        width: 97%;
-                    }
+                    width: 70%;
+                    gap: 100px;
+                    justify-content: flex-start;
 
                     &--text {
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
+                        width: 471px;
 
                         .title {
                             color: #fff;
@@ -300,11 +251,11 @@
                             background: var(--Blue, #9DB8D8);
                             transform: rotate(-2.583deg) translateY(15px);
 
-                            @media screen and (max-width:1280px ) {
+                            @media screen and (max-width:1280px) {
                                 padding: 15px;
                             }
 
-                            @media screen and (max-width:480px ) {
+                            @media screen and (max-width:480px) {
                                 padding: 5px;
                             }
 
@@ -328,6 +279,35 @@
 
                                 @media screen and (max-width:480px) {
                                     font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+
+                    &--image {
+                        position: relative;
+                        width: 518px;
+
+                        @media screen and (max-width:768px) {
+                            left: 0%;
+                        }
+
+                        &_wrapper {
+                            position: absolute;
+                            bottom: 0;
+                            overflow: hidden;
+
+                            img {
+                                opacity: 0;
+                                transition: opacity 0.3s ease;
+
+                                @media screen and (max-width:768px) {
+                                    width: 80%;
+                                }
+
+                                &.animate {
+                                    animation: bounceIn 2s ease forwards;
+                                    opacity: 1;
                                 }
                             }
                         }
