@@ -456,6 +456,21 @@
 .section_overview {
   padding-top: 98px;
 }
+.section_overview-wrapper {
+  position: relative;
+}
+.section_overview-wrapper--circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 680px;
+  height: 680px;
+  flex-shrink: 0;
+  border-radius: 680px;
+  opacity: 0.4;
+  background: #45BCCC;
+  filter: blur(300px);
+}
 .section_overview-wrapper--content_top {
   position: relative;
 }
@@ -517,6 +532,22 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.page {
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+  top: 75%;
+  width: 516px;
+  height: 516px;
+  flex-shrink: 0;
+  border-radius: 516px;
+  opacity: 0.8;
+  background: #259FAD;
+  filter: blur(300px);
 }
 
 html body {

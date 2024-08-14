@@ -2,8 +2,22 @@
     padding-top: 98px;
 
     &-wrapper {
+        position: relative;
+        &--circle {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 680px;
+            height: 680px;
+            flex-shrink: 0;
+            border-radius: 680px;
+            opacity: 0.4;
+            background: #45BCCC;
+            filter: blur(300px);
+        }
+
         &--content {
-            &_top{
+            &_top {
                 position: relative;
 
                 &-image {
@@ -11,33 +25,33 @@
                     top: 45%;
                     right: 0;
                 }
-    
+
                 &-items {
                     &--item {
                         height: 264px;
-    
+
                         .text-card {
                             display: flex;
                             flex-direction: column;
                             gap: 20px;
                             color: #2E3140;
-    
+
                             &--title {
                                 font-size: 36px;
                                 line-height: 110%;
                                 text-transform: uppercase;
                             }
-    
+
                             &--desc {
                                 font-size: 20px;
                                 line-height: 130%;
                                 width: 83%;
-    
+
                                 &.third {
                                     width: 32%;
                                     height: 263px;
                                 }
-    
+
                                 span {
                                     color: #9DB8D8;
                                 }
@@ -46,27 +60,28 @@
                     }
                 }
             }
-            &_bottom{
-                &-btn{
+
+            &_bottom {
+                &-btn {
                     display: flex;
                     padding-top: 200px;
                     justify-content: center;
                 }
 
-                &-icons{
+                &-icons {
                     display: flex;
                     gap: 128px;
                     width: 70%;
                     margin: 65px auto;
 
-                    .icon{
+                    .icon {
                         display: flex;
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
                         gap: 39px;
 
-                        .desc{
+                        .desc {
                             font-size: 16px;
                             line-height: 150%;
                         }

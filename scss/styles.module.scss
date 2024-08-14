@@ -8,6 +8,22 @@
     box-sizing: border-box;
 }
 
+.page {
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    top: 75%;
+    width: 516px;
+    height: 516px;
+    flex-shrink: 0;
+    border-radius: 516px;
+    opacity: 0.8;
+    background: #259FAD;
+    filter: blur(300px);
+}
+
 html body {
     cursor: default;
     background-color: #F9F9F9;
