@@ -1,6 +1,5 @@
 $(document).ready(function() {
     function checkVisibility() {
-        var delay = 800; 
 
         $('.section_about-wrapper--content_tape-image--wrapper_content').each(function() {
             var $this = $(this);
@@ -12,7 +11,7 @@ $(document).ready(function() {
             if (elementBottom > scrollTop && elementTop < scrollTop + windowHeight) {
                 setTimeout(function() {
                     $this.find('img').addClass('animate');
-                }, delay);
+                });
             }
         });
     }
