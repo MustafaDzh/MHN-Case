@@ -146,14 +146,6 @@
 .section_about {
   padding-top: 96px;
 }
-.section_about-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 98%;
-  max-width: calc(1440px - 2%);
-  margin: 0 auto;
-}
 @media screen and (max-width: 480px) {
   .section_about-wrapper svg {
     width: 200px;
@@ -334,6 +326,9 @@
   position: relative;
   margin-top: 105px;
 }
+.section_about-wrapper--content_tape.two {
+  background: #D3FA6D;
+}
 @media screen and (max-width: 480px) {
   .section_about-wrapper--content_tape {
     height: 150px;
@@ -346,6 +341,10 @@
   width: 70%;
   gap: 100px;
   justify-content: flex-start;
+}
+.section_about-wrapper--content_tape-content.two {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
 }
 .section_about-wrapper--content_tape-content--text {
   display: flex;

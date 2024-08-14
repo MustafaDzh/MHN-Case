@@ -22,13 +22,6 @@
     padding-top: 96px;
 
     &-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 98%;
-        max-width: calc(1440px - 2%);
-        margin: 0 auto;
-
         svg {
             @media screen and (max-width:480px) {
                 width: 200px;
@@ -200,6 +193,10 @@
                 position: relative;
                 margin-top: 105px;
 
+                &.two{
+                    background: #D3FA6D;
+                }
+
                 @media screen and (max-width:480px) {
                     height: 150px;
                     margin-top: 30px;
@@ -211,6 +208,11 @@
                     width: 70%;
                     gap: 100px;
                     justify-content: flex-start;
+
+                    &.two{
+                        flex-direction: row-reverse;
+                        justify-content: flex-end;
+                    }
 
                     &--text {
                         display: flex;
