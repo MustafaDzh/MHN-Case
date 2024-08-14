@@ -2,7 +2,7 @@ $(document).ready(function() {
     function checkVisibility() {
         var delay = 800; 
 
-        $('.section_about-wrapper--content_tape-content--image').each(function() {
+        $('.section_about-wrapper--content_tape-image--wrapper_content').each(function() {
             var $this = $(this);
             var windowHeight = $(window).height();
             var scrollTop = $(window).scrollTop();

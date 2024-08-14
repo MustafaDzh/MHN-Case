@@ -20,7 +20,6 @@
 
 .section_about {
     padding-top: 96px;
-    overflow: hidden;
 
     &-wrapper {
         display: flex;
@@ -44,7 +43,7 @@
 
                 @media screen and (max-width:1280px) {
                     font-size: 30px;
-                  }
+                }
 
                 &-desc {
                     width: 68%;
@@ -68,7 +67,7 @@
 
                         @media screen and (max-width:1280px) {
                             font-size: 18px;
-                          }
+                        }
                     }
                 }
 
@@ -86,7 +85,7 @@
 
                             @media screen and (max-width:1280px) {
                                 font-size: 55px;
-                              }
+                            }
                         }
 
                         .subtitle {
@@ -96,20 +95,20 @@
 
                             @media screen and (max-width:1280px) {
                                 font-size: 15px;
-                              }
+                            }
                         }
                     }
 
-                    .right{
+                    .right {
                         width: 29%;
 
-                        .subtitle{
+                        .subtitle {
                             width: 80%;
                         }
                     }
 
-                    .left{
-                        .subtitle{
+                    .left {
+                        .subtitle {
                             width: 52%;
                         }
                     }
@@ -125,7 +124,34 @@
                 justify-content: center;
                 position: relative;
                 margin-top: 105px;
-                margin-bottom: 20px;
+
+                &-image {
+                    position: absolute;
+                    bottom: 0;
+                    left: 10%;
+
+                    &--wrapper {
+                        position: relative;
+                        overflow: hidden;
+                        width: 518px;
+                        height: 419px;
+
+                        &_content {
+                            position: absolute;
+                            bottom: 0;
+
+                            img {
+                                opacity: 0;
+                                transition: opacity 0.3s ease;
+
+                                &.animate {
+                                    animation: bounceIn 2s ease forwards;
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                }
 
                 &-content {
                     width: 35%;
@@ -136,27 +162,10 @@
                         width: 60%;
                     }
 
-                    &--image {
-                        position: absolute;
-                        bottom: 0;
-                        left: 10%;
-
-                        img {
-                            opacity: 0;
-                            transition: opacity 0.3s ease; 
-
-                            &.animate {
-                                animation: bounceIn 2s ease forwards;
-                                opacity: 1;
-                            }
-                        }
-                    }
-
                     &--text {
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
-                        position: relative;
 
                         .title {
                             color: #fff;
