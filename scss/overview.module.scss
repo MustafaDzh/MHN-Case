@@ -24,6 +24,26 @@
                     position: absolute;
                     top: 45%;
                     right: 0;
+
+                    @media screen and (max-width:1440px) {
+                        display: flex;
+                        justify-content: flex-end;
+                        top: 50%;
+                    }
+
+                    @media screen and (max-width:1024px) {
+                        display: none;
+                    }
+
+                    img{
+                        @media screen and (max-width:1440px) {
+                            width: 80%;
+                        }
+                    }
+
+                    @media screen and (max-width:768px) {
+                        display: none;
+                    }
                 }
 
                 &-items {
@@ -35,22 +55,44 @@
                             flex-direction: column;
                             gap: 20px;
                             color: #2E3140;
+                            width: 83%;
+
+                            &.third {
+                                width: 32%;
+
+                                @media screen and (max-width:1024px) {
+                                    width: 100%;
+                                }
+                            }
+
+                            @media screen and (max-width:1024px) {
+                                width: 100%;
+                            }
 
                             &--title {
                                 font-size: 36px;
                                 line-height: 110%;
                                 text-transform: uppercase;
+
+                                @media screen and (max-width:768px) {
+                                    font-size: 26px;
+                                }
                             }
 
                             &--desc {
                                 font-size: 20px;
                                 line-height: 130%;
-                                width: 83%;
+                                height: 263px;
 
-                                &.third {
-                                    width: 32%;
-                                    height: 263px;
+                                @media screen and (max-width:768px) {
+                                    font-size: 15px;
+                                    max-height: 200px;
                                 }
+        
+                                @media screen and (max-width:480px) {
+                                    font-size:14px;
+                                }
+        
 
                                 span {
                                     color: #9DB8D8;
@@ -66,6 +108,16 @@
                     display: flex;
                     padding-top: 200px;
                     justify-content: center;
+
+                    @media screen and (max-width:1024px) {
+                        padding-top: 10px;
+                    }
+
+                    img{
+                        @media screen and (max-width:768px) {
+                            width: 70%;
+                        }
+                    }
                 }
 
                 &-icons {
@@ -73,6 +125,16 @@
                     gap: 128px;
                     width: 70%;
                     margin: 65px auto;
+
+                    @media screen and (max-width:1024px) {
+                        width: 90%;
+                        gap: 90px;
+                    }
+
+                    @media screen and (max-width:768px) {
+                        width: 95%;
+                        gap: 50px;
+                    }
 
                     .icon {
                         display: flex;
@@ -84,6 +146,10 @@
                         .desc {
                             font-size: 16px;
                             line-height: 150%;
+
+                            @media screen and (max-width:768px) {
+                                font-size: 15px;
+                            }
                         }
                     }
                 }

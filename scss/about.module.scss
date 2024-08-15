@@ -36,6 +36,10 @@
             align-items: center;
             gap: 137px;
 
+            @media screen and (max-width:768px) {
+                gap: 70px;
+            }
+
             @media screen and (max-width:480px) {
                 padding-top: 40px;
                 gap: 50px;
@@ -193,8 +197,16 @@
                 position: relative;
                 margin-top: 105px;
 
-                &.two{
+                &.second {
                     background: #D3FA6D;
+                }
+
+                @media screen and (max-width:1024px) {
+                    height: 220px;
+                }
+
+                @media screen and (max-width:768px) {
+                    height: 180px;
                 }
 
                 @media screen and (max-width:480px) {
@@ -205,20 +217,38 @@
                 &-content {
                     margin: 0 auto;
                     display: flex;
-                    width: 70%;
-                    gap: 100px;
-                    justify-content: flex-start;
+                    width: 90%;
 
-                    &.two{
+                    &.second {
                         flex-direction: row-reverse;
-                        justify-content: flex-end;
                     }
 
                     &--text {
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
-                        width: 471px;
+                        width: 100%;
+
+                        &.second{
+                            align-items: center;
+
+                            .title{
+                                color: #2E3140;
+                                font-size: 48px;
+
+                                @media screen and (max-width:1024px) {
+                                    font-size: 38px;
+                                }
+
+                                @media screen and (max-width:1024px) {
+                                    font-size: 30px;
+                                }
+
+                                @media screen and (max-width:768px) {
+                                    font-size: 27px;
+                                }
+                            }
+                        }
 
                         .title {
                             color: #fff;
@@ -257,7 +287,7 @@
                                 padding: 15px;
                             }
 
-                            @media screen and (max-width:480px) {
+                            @media screen and (max-width:768px) {
                                 padding: 5px;
                             }
 
@@ -288,7 +318,13 @@
 
                     &--image {
                         position: relative;
-                        width: 518px;
+                        width: 90%;
+
+
+                        &.first{
+                                display: flex;
+                                justify-content: center;
+                        }
 
                         @media screen and (max-width:768px) {
                             left: 0%;
@@ -300,13 +336,18 @@
                             overflow: hidden;
 
                             img {
+                                width: 100%;
                                 opacity: 0;
                                 transition: opacity 0.3s ease;
 
-                                @media screen and (max-width:768px) {
-                                    width: 80%;
+                                @media screen and (max-width:1024px) {
+                                    height: 350px;
                                 }
 
+                                @media screen and (max-width:768px) {
+                                    height: 270px;
+                                }
+                                
                                 &.animate {
                                     animation: bounceIn 2s ease forwards;
                                     opacity: 1;
