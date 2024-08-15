@@ -18,4 +18,23 @@ $(document).ready(function() {
 
     $(window).on('scroll', checkVisibility);
     checkVisibility();
+
+        var swiper = new Swiper('.firstSwiper', {
+            loop: false,
+            slidesPerView: 2.6,
+            spaceBetween: 0,
+            direction: 'horizontal',
+        });
+
+        var newSwiper = new Swiper('.secondSwiper', {
+            loop: false,                          
+            slidesPerView: 2.5,                  
+            spaceBetween: 0,                      
+            direction: 'horizontal',              
+            initialSlide: (function() {
+                var totalSlides = $('.secondSwiper .swiper-slide').length;
+                return totalSlides - 1;           
+            })(),
+        });
+        
 });

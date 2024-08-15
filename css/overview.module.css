@@ -46,9 +46,6 @@
     display: none;
   }
 }
-.section_overview-wrapper--content_top-items--item {
-  height: 264px;
-}
 .section_overview-wrapper--content_top-items--item .text-card {
   display: flex;
   flex-direction: column;
