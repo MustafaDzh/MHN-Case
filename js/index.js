@@ -21,13 +21,13 @@ $(document).ready(function() {
 
     var tapeSwiper = new Swiper('.tape-hero', {
         spaceBetween: 70,                      
-        direction: 'horizontal',
         loop: true,
+        slidesPerView: 'auto',
         autoplay: {
             delay: 0, 
             disableOnInteraction: false,
         },
-        speed:7000,
+        speed: 5000, 
     });
 
         var swiper = new Swiper('.firstSwiper', {
@@ -46,6 +46,16 @@ $(document).ready(function() {
                 var totalSlides = $('.secondSwiper .swiper-slide').length;
                 return totalSlides - 1;           
             })(),
+        });
+
+        $('.card-image').each(function() {
+            var $contentOn = $(this).find('.card-image--content_on');
+            
+            if ($contentOn.find('img').length === 0) {
+                $(this).addClass('no-overlay-image');
+            } else {
+                $(this).removeClass('no-overlay-image');
+            }
         });
         
 });
