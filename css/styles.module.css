@@ -754,8 +754,8 @@
 .section_design-wrapper--content_swipers .card-image {
   position: absolute;
   width: 90%;
-  bottom: 30%;
-  left: 20%;
+  bottom: 100px;
+  left: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -786,6 +786,8 @@
   object-fit: contain;
   width: 220px;
   height: 200px;
+  display: block;
+  transition: transform 0.3s linear, filter 0.3s linear;
 }
 .section_design-wrapper--content_swipers-bottom {
   width: 62%;
