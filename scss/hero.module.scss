@@ -22,19 +22,28 @@
                 left: 0;
                 transform: rotate(-2deg) translateY(40px);
 
-                &:after {
-                    content: "";
-                    position: absolute;
+                &-container {
                     width: 100%;
-                    height: 100%;
-                    background: url(/images/svg/hero-text.svg);
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%) rotate(2deg);
-                    // animation: moveBg 5s linear infinite;
+                    height: 70px;
+                    background-color: #D3FA6D;
+
+                    .tape-hero {
+                        height: 100%;
+                    }
                 }
+
+                .swiper-wrapper {
+                    display: flex;
+                    transition-timing-function: linear;
+                    align-items: center; 
+
+
+                  .swiper-slide {
+                    width: fit-content !important;
+                    display: flex;
+                    align-items: center;
+                  }
+                  }
             }
         }
 

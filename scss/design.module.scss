@@ -68,7 +68,7 @@
             &_swipers {
                 &-top {
                     display: flex;
-                    width:77%;
+                    width: 77%;
                     margin-left: auto;
 
                     .text {
@@ -85,61 +85,50 @@
                 }
 
                 .card {
+                    height: 350px;
                     display: flex;
                     flex-direction: column;
-                    height: 350px;
+                    position: relative;
                     justify-content: flex-end;
 
-                    &-image {
-                        position: absolute;
-                        bottom: 60%;
-                        right: 0;
+                    &-content {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 36px;
+                        padding: 22px 6px 24px 23px;
+                        background: var(--Near-White, #F9F9F9);
+                        box-shadow: 0 29px 34px -20px #0000001f;
+                        border-radius: 8px;
 
-                        &--content {
-                            height: 250px;
-                            position: relative;
+                        &--title {
+                            width: 130px;
 
-                            img {
-                                width: 100%;
+                            .title {
+                                color: var(--Gunmetal, #2E3140);
+                                font-size: 24px;
                             }
                         }
 
-                        &--elipse {
-                            position: absolute;
-                            bottom: 0%;
-                            right: 28%;
+                        &--text {
+                            display: flex;
+                            align-items: flex-end;
                         }
                     }
 
-                    &-text {
-                        &--title {
-                            font-size: 24px;
-                            width: 30%;
-                            text-transform: uppercase;
-                        }
+                    &-image {
+                        position: absolute;
+                        width: 100%;
+                        bottom: 30%;
+                        left: 40%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        max-height: 300px;
 
-                        &--content {
-                            display: flex;
-                            position: relative;
-                            align-items: flex-start;
-                            flex-direction: column;
-                            justify-content: flex-end;
-                            gap: 36px;
-                            padding: 0px 0px 24px 20px;
-
-                            &_title {
-                                width: 30%;
-                            }
-
-                            &_all {
-                                display: flex;
-                                width: 100%;
-                                align-items: flex-end;
-
-                                &-left{
-                                    width: 100%;
-                                }
-                            }
+                        img {
+                            object-fit: contain;
+                            width: 200px;
+                            height: 200px;
                         }
                     }
                 }

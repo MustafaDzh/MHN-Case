@@ -19,6 +19,17 @@ $(document).ready(function() {
     $(window).on('scroll', checkVisibility);
     checkVisibility();
 
+    var tapeSwiper = new Swiper('.tape-hero', {
+        spaceBetween: 70,                      
+        direction: 'horizontal',
+        loop: true,
+        autoplay: {
+            delay: 0, 
+            disableOnInteraction: false,
+        },
+        speed:7000,
+    });
+
         var swiper = new Swiper('.firstSwiper', {
             loop: false,
             slidesPerView: 2.6,

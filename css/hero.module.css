@@ -22,17 +22,23 @@
   left: 0;
   transform: rotate(-2deg) translateY(40px);
 }
-.section_hero-wrapper--background_line:after {
-  content: "";
-  position: absolute;
+.section_hero-wrapper--background_line-container {
   width: 100%;
+  height: 70px;
+  background-color: #D3FA6D;
+}
+.section_hero-wrapper--background_line-container .tape-hero {
   height: 100%;
-  background: url(/images/svg/hero-text.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(2deg);
+}
+.section_hero-wrapper--background_line .swiper-wrapper {
+  display: flex;
+  transition-timing-function: linear;
+  align-items: center;
+}
+.section_hero-wrapper--background_line .swiper-wrapper .swiper-slide {
+  width: fit-content !important;
+  display: flex;
+  align-items: center;
 }
 .section_hero-wrapper--content {
   position: absolute;
