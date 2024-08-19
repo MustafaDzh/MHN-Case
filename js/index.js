@@ -30,6 +30,17 @@ $(document).ready(function() {
         speed: 5000, 
     });
 
+    var fontsSwiper = new Swiper('.tape-fonts', {
+        spaceBetween: 70,                      
+        loop: true,
+        slidesPerView: 'auto',
+        autoplay: {
+            delay: 0, 
+            disableOnInteraction: false,
+        },
+        speed: 5000, 
+    });
+
         var swiper = new Swiper('.firstSwiper', {
             loop: false,
             slidesPerView: 2.6,
