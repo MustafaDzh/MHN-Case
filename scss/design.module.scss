@@ -207,12 +207,27 @@
                             flex-direction: column;
                             gap: 10px;
                         }
+                        &--bottom{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 13px;
+                        }
                     }
 
                     .card-left{
                         display: flex;
                         flex-direction: column;
                         gap: 52px;
+
+                        &--bottom{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 13px;
+
+                            &_size{
+                                padding-top: 20px;
+                            }
+                        }
                     }
                 }
             }

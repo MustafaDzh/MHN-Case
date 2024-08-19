@@ -177,10 +177,23 @@
   flex-direction: column;
   gap: 10px;
 }
+.section_design-wrapper--content_fonts-font .card-right--bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
 .section_design-wrapper--content_fonts-font .card-left {
   display: flex;
   flex-direction: column;
   gap: 52px;
+}
+.section_design-wrapper--content_fonts-font .card-left--bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.section_design-wrapper--content_fonts-font .card-left--bottom_size {
+  padding-top: 20px;
 }
 
 .card-image.no-overlay-image:hover .card-image--content img {
