@@ -66,7 +66,7 @@
 .section_design-wrapper--content_swipers-top .text {
   display: flex;
   align-items: flex-end;
-  width: 38%;
+  width: 67%;
   margin-right: 40px;
 }
 .section_design-wrapper--content_swipers-top .text .desc {
@@ -141,6 +141,46 @@
 .section_design-wrapper--content_swipers-bottom {
   width: 62%;
   margin-right: auto;
+}
+.section_design-wrapper--content_fonts {
+  max-width: calc(1440px - 2%);
+  margin: 0 auto;
+  padding-top: 165px;
+}
+.section_design-wrapper--content_fonts .text-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 60%;
+}
+.section_design-wrapper--content_fonts .text-card--title {
+  font-size: 36px;
+  line-height: 110%;
+  text-transform: uppercase;
+}
+.section_design-wrapper--content_fonts .text-card--desc {
+  font-size: 20px;
+  line-height: 130%;
+  height: 140px;
+}
+.section_design-wrapper--content_fonts-font {
+  display: flex;
+  justify-content: space-between;
+}
+.section_design-wrapper--content_fonts-font .card-right {
+  display: flex;
+  flex-direction: column;
+  gap: 49px;
+}
+.section_design-wrapper--content_fonts-font .card-right--top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.section_design-wrapper--content_fonts-font .card-left {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
 }
 
 .card-image.no-overlay-image:hover .card-image--content img {

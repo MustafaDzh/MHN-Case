@@ -77,7 +77,7 @@
                     .text {
                         display: flex;
                         align-items: flex-end;
-                        width: 38%;
+                        width: 67%;
                         margin-right: 40px;
 
                         .desc {
@@ -167,6 +167,53 @@
                 &-bottom {
                     width: 62%;
                     margin-right: auto;
+                }
+            }
+
+            &_fonts{
+                max-width: calc(1440px - 2%);
+                margin: 0 auto;
+                padding-top: 165px;
+
+                .text-card{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    width: 60%;
+
+                    &--title{
+                        font-size: 36px;
+                        line-height: 110%;
+                        text-transform: uppercase;
+                    }
+
+                    &--desc{
+                        font-size: 20px;
+                        line-height: 130%;
+                        height: 140px;
+                    }
+                }
+
+                &-font{
+                    display: flex;
+                    justify-content: space-between;
+
+                    .card-right{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 49px;
+                        &--top{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+                        }
+                    }
+
+                    .card-left{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 52px;
+                    }
                 }
             }
         }
