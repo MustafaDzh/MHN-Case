@@ -23,21 +23,21 @@ $(document).ready(function() {
         spaceBetween: 70,                      
         loop: true,
         slidesPerView: 'auto',
-        autoplay: {
-            delay: 0, 
-            disableOnInteraction: false,
-        },
+        // autoplay: {
+        //     delay: 0, 
+        //     disableOnInteraction: false,
+        // },
         speed: 5000, 
     });
 
     var fontsSwiper = new Swiper('.tape-fonts', {
-        spaceBetween: 70,                      
+        spaceBetween: 32,                      
         loop: true,
         slidesPerView: 'auto',
-        autoplay: {
-            delay: 0, 
-            disableOnInteraction: false,
-        },
+        // autoplay: {
+        //     delay: 0, 
+        //     disableOnInteraction: false,
+        // },
         speed: 5000, 
     });
 
@@ -49,13 +49,13 @@ $(document).ready(function() {
         });
 
         var newSwiper = new Swiper('.secondSwiper', {
-            loop: false,                          
-            slidesPerView: 2.5,                  
-            spaceBetween: 0,                      
-            direction: 'horizontal',              
+            spaceBetween: 32, 
+            loop: false,
+            slidesPerView: 2.5,
+            direction: 'horizontal',
             initialSlide: (function() {
-                var totalSlides = $('.secondSwiper .swiper-slide').length;
-                return totalSlides - 1;           
+                var totalSlides = document.querySelectorAll('.secondSwiper .swiper-slide').length;
+                return totalSlides - 1;
             })(),
         });
 

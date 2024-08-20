@@ -1,8 +1,11 @@
 .section_overview {
     padding-top: 98px;
+    position: relative;
+    overflow: hidden;
 
     &-wrapper {
         position: relative;
+
         &--circle {
             position: absolute;
             top: 0;
@@ -35,7 +38,7 @@
                         display: none;
                     }
 
-                    img{
+                    img {
                         @media screen and (max-width:1440px) {
                             width: 80%;
                         }
@@ -86,11 +89,11 @@
                                     font-size: 15px;
                                     max-height: 200px;
                                 }
-        
+
                                 @media screen and (max-width:480px) {
-                                    font-size:14px;
+                                    font-size: 14px;
                                 }
-        
+
 
                                 span {
                                     color: #9DB8D8;
@@ -111,7 +114,7 @@
                         padding-top: 10px;
                     }
 
-                    img{
+                    img {
                         @media screen and (max-width:768px) {
                             width: 70%;
                         }
@@ -153,5 +156,44 @@
                 }
             }
         }
+    }
+
+    &-firstBlur {
+        position: absolute;
+        top: 15%;
+        right: 0;
+        width: 680px;
+        height: 680px;
+        border-radius: 680px;
+        opacity: 0.4;
+        background: #45BCCC;
+        filter: blur(300px);
+        z-index: 0;
+    }
+
+    &-secondBlur {
+        position: absolute;
+        top: 45%;
+        left: 0%;
+        width: 516px;
+        height: 516px;
+        border-radius: 516px;
+        opacity: 0.8;
+        background: #259FAD;
+        filter: blur(300px);
+        z-index: 0;
+    }
+
+    &-thirdBlur {
+        position: absolute;
+        top: 75%;
+        left: 0%;
+        width: 554px;
+        height: 554px;
+        border-radius: 554px;
+        opacity: 0.8;
+        background: #259FAD;
+        filter: blur(300px);
+        z-index: 0;
     }
 }

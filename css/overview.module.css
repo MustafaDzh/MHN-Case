@@ -1,5 +1,7 @@
 .section_overview {
   padding-top: 98px;
+  position: relative;
+  overflow: hidden;
 }
 .section_overview-wrapper {
   position: relative;
@@ -143,6 +145,42 @@
   .section_overview-wrapper--content_bottom-icons .icon .desc {
     font-size: 15px;
   }
+}
+.section_overview-firstBlur {
+  position: absolute;
+  top: 15%;
+  right: 0;
+  width: 680px;
+  height: 680px;
+  border-radius: 680px;
+  opacity: 0.4;
+  background: #45BCCC;
+  filter: blur(300px);
+  z-index: 0;
+}
+.section_overview-secondBlur {
+  position: absolute;
+  top: 45%;
+  left: 0%;
+  width: 516px;
+  height: 516px;
+  border-radius: 516px;
+  opacity: 0.8;
+  background: #259FAD;
+  filter: blur(300px);
+  z-index: 0;
+}
+.section_overview-thirdBlur {
+  position: absolute;
+  top: 75%;
+  left: 0%;
+  width: 554px;
+  height: 554px;
+  border-radius: 554px;
+  opacity: 0.8;
+  background: #259FAD;
+  filter: blur(300px);
+  z-index: 0;
 }
 
 /*# sourceMappingURL=overview.module.css.map */

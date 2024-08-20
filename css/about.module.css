@@ -201,6 +201,7 @@
   justify-content: center;
   position: relative;
   margin-top: 105px;
+  z-index: 2;
 }
 .section_about-wrapper--content_tape.second {
   background: #D3FA6D;
