@@ -208,6 +208,11 @@
                     background: #D3FA6D;
                 }
 
+                &.third{
+                    background: #D3FA6D;
+                    margin-top: 0px; 
+                }
+
                 @media screen and (max-width: 1024px) {
                     height: 220px;
                 }
@@ -326,6 +331,11 @@
                         &.first {
                             display: flex;
                             justify-content: center;
+                        }
+
+                        &.third{
+                            display: flex;
+                            justify-content: flex-end;
                         }
 
                         @media screen and (max-width: 768px) {

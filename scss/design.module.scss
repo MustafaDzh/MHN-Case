@@ -444,6 +444,10 @@
                         display: flex;
                         justify-content: space-between;
 
+                        @media screen and (max-width:768px) {
+                            flex-direction: column;
+                        }
+
                         .card-right {
                             display: flex;
                             flex-direction: column;
@@ -479,6 +483,100 @@
                                 }
                             }
                         }
+
+                        .card-right, .card-left{
+                            &--top{
+                                &_title{
+                                    svg{
+                                        @media screen and (max-width:1024px) {
+                                            width: 372px;
+                                        }
+
+                                        @media screen and (max-width:768px) {
+                                            width: 332px;
+                                        }
+                                        @media screen and (max-width:480px) {
+                                            width: 312px;
+                                        }
+                                    }
+                                }
+                                &_subtitle{
+                                    svg{
+                                        @media screen and (max-width:1024px) {
+                                            width: 299px;
+                                        }
+                                        @media screen and (max-width:768px) {
+                                            width: 259px;
+                                        }
+                                        @media screen and (max-width:480px) {
+                                            width: 199px;
+                                        }
+                                    }
+                                }   
+                            }
+                        }
+                        
+                        .card-left{
+                            &--bottom{
+                                &_subtitle{
+                                    svg{
+                                        @media screen and (max-width:1024px) {
+                                            width: 307px;
+                                        }
+                                        @media screen and (max-width:768px) {
+                                            width: 267px;
+                                        }
+                                        @media screen and (max-width:480px) {
+                                            width: 237px;
+                                        }
+                                    }
+                                }
+                                &_size{
+                                    svg{
+                                        @media screen and (max-width:1024px) {
+                                            width: 95px;
+                                        }
+                                        @media screen and (max-width:1024px) {
+                                            width: 80px;
+                                        }
+                                        @media screen and (max-width:480px) {
+                                            width: 70px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .card-right{
+                            &--bottom{
+                                &_subtitle{
+                                    svg{
+                                        @media screen and (max-width:1024px) {
+                                            width: 164px;
+                                        }
+                                    }
+                                    @media screen and (max-width:768px) {
+                                        width: 124px;
+                                    }
+                                    @media screen and (max-width:480px) {
+                                        width: 94px;
+                                    }
+                                }
+                                &_size{
+                                    svg{
+                                        @media screen and (max-width:1024px) {
+                                            width: 200px;
+                                        }
+                                        @media screen and (max-width:768px) {
+                                            width: 160px;
+                                        }
+                                        @media screen and (max-width:480px) {
+                                            width: 130px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
 
@@ -493,10 +591,22 @@
                         .fistButton {
                             margin-bottom: 12px;
                         }
+
+                        svg{
+                            @media screen and (max-width:1024px) {
+                                width: 400px;
+                            }
+                        }
                     }
 
                     .desc{
                         margin-top: 30px;
+
+                        svg{
+                            @media screen and (max-width:1024px) {
+                                width: 400px;
+                            }
+                        }
                     }
 
                     

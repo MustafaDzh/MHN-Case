@@ -1,7 +1,6 @@
 .section_sitemap-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 16px;
 }
 .section_sitemap-wrapper--map {
   overflow-x: auto;

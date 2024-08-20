@@ -418,6 +418,11 @@
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 768px) {
+  .section_design-wrapper--content_items-fonts--font {
+    flex-direction: column;
+  }
+}
 .section_design-wrapper--content_items-fonts--font .card-right {
   display: flex;
   flex-direction: column;
@@ -448,6 +453,96 @@
 .section_design-wrapper--content_items-fonts--font .card-left--bottom_size {
   padding-top: 20px;
 }
+@media screen and (max-width: 1024px) {
+  .section_design-wrapper--content_items-fonts--font .card-right--top_title svg, .section_design-wrapper--content_items-fonts--font .card-left--top_title svg {
+    width: 372px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section_design-wrapper--content_items-fonts--font .card-right--top_title svg, .section_design-wrapper--content_items-fonts--font .card-left--top_title svg {
+    width: 332px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section_design-wrapper--content_items-fonts--font .card-right--top_title svg, .section_design-wrapper--content_items-fonts--font .card-left--top_title svg {
+    width: 312px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section_design-wrapper--content_items-fonts--font .card-right--top_subtitle svg, .section_design-wrapper--content_items-fonts--font .card-left--top_subtitle svg {
+    width: 299px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section_design-wrapper--content_items-fonts--font .card-right--top_subtitle svg, .section_design-wrapper--content_items-fonts--font .card-left--top_subtitle svg {
+    width: 259px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section_design-wrapper--content_items-fonts--font .card-right--top_subtitle svg, .section_design-wrapper--content_items-fonts--font .card-left--top_subtitle svg {
+    width: 199px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section_design-wrapper--content_items-fonts--font .card-left--bottom_subtitle svg {
+    width: 307px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section_design-wrapper--content_items-fonts--font .card-left--bottom_subtitle svg {
+    width: 267px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section_design-wrapper--content_items-fonts--font .card-left--bottom_subtitle svg {
+    width: 237px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section_design-wrapper--content_items-fonts--font .card-left--bottom_size svg {
+    width: 95px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section_design-wrapper--content_items-fonts--font .card-left--bottom_size svg {
+    width: 80px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section_design-wrapper--content_items-fonts--font .card-left--bottom_size svg {
+    width: 70px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section_design-wrapper--content_items-fonts--font .card-right--bottom_subtitle svg {
+    width: 164px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section_design-wrapper--content_items-fonts--font .card-right--bottom_subtitle {
+    width: 124px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section_design-wrapper--content_items-fonts--font .card-right--bottom_subtitle {
+    width: 94px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section_design-wrapper--content_items-fonts--font .card-right--bottom_size svg {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section_design-wrapper--content_items-fonts--font .card-right--bottom_size svg {
+    width: 160px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section_design-wrapper--content_items-fonts--font .card-right--bottom_size svg {
+    width: 130px;
+  }
+}
 .section_design-wrapper--content_items-colors .buttons, .section_design-wrapper--content_items-colors .right-buttons, .section_design-wrapper--content_items-buttons .buttons, .section_design-wrapper--content_items-buttons .right-buttons {
   display: flex;
   flex-direction: column;
@@ -457,8 +552,18 @@
 .section_design-wrapper--content_items-colors .buttons .fistButton, .section_design-wrapper--content_items-colors .right-buttons .fistButton, .section_design-wrapper--content_items-buttons .buttons .fistButton, .section_design-wrapper--content_items-buttons .right-buttons .fistButton {
   margin-bottom: 12px;
 }
+@media screen and (max-width: 1024px) {
+  .section_design-wrapper--content_items-colors .buttons svg, .section_design-wrapper--content_items-colors .right-buttons svg, .section_design-wrapper--content_items-buttons .buttons svg, .section_design-wrapper--content_items-buttons .right-buttons svg {
+    width: 400px;
+  }
+}
 .section_design-wrapper--content_items-colors .desc, .section_design-wrapper--content_items-buttons .desc {
   margin-top: 30px;
+}
+@media screen and (max-width: 1024px) {
+  .section_design-wrapper--content_items-colors .desc svg, .section_design-wrapper--content_items-buttons .desc svg {
+    width: 400px;
+  }
 }
 .section_design-wrapper--content_items-icons {
   display: flex;

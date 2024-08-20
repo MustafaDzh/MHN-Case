@@ -216,6 +216,10 @@
 .section_about-wrapper--content_tape.second {
   background: #D3FA6D;
 }
+.section_about-wrapper--content_tape.third {
+  background: #D3FA6D;
+  margin-top: 0px;
+}
 @media screen and (max-width: 1024px) {
   .section_about-wrapper--content_tape {
     height: 220px;
@@ -342,6 +346,10 @@
 .section_about-wrapper--content_tape-content--image.first {
   display: flex;
   justify-content: center;
+}
+.section_about-wrapper--content_tape-content--image.third {
+  display: flex;
+  justify-content: flex-end;
 }
 @media screen and (max-width: 768px) {
   .section_about-wrapper--content_tape-content--image {
