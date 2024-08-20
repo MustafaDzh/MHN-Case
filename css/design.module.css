@@ -75,11 +75,92 @@
   width: 77%;
   margin-left: auto;
 }
+@media screen and (max-width: 1440px) {
+  .section_design-wrapper--content_swipers-top {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section_design-wrapper--content_swipers-top {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section_design-wrapper--content_swipers-top {
+    width: 100%;
+  }
+}
+.section_design-wrapper--content_swipers-top .firstSwiper {
+  width: 100%;
+}
+.section_design-wrapper--content_swipers-top .firstSwiper .design-buttons {
+  display: flex;
+  gap: 16px;
+  padding-left: 20px;
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  .section_design-wrapper--content_swipers-top .firstSwiper .design-buttons {
+    display: flex;
+  }
+}
+.section_design-wrapper--content_swipers-top .firstSwiper .design-buttons button {
+  width: 40px;
+  height: 40px;
+  border-radius: 64px;
+  border: 1px solid #000;
+  cursor: pointer;
+  font-size: 16px;
+  background: transparent;
+}
+.section_design-wrapper--content_swipers-top .firstSwiper .design-buttons button svg path {
+  fill: black;
+}
+.section_design-wrapper--content_swipers-top .firstSwiper .swiper-pagination {
+  margin: 0 auto;
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  .section_design-wrapper--content_swipers-top .firstSwiper .swiper-pagination {
+    display: flex;
+  }
+}
+.section_design-wrapper--content_swipers-top .firstSwiper .swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  opacity: 0.6;
+  transition: opacity 0.3s, background-color 0.3s;
+  border: 1px solid grey;
+  background-color: #3A3ADF;
+  margin: 0 auto;
+}
+.section_design-wrapper--content_swipers-top .firstSwiper .swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: #fff;
+}
 .section_design-wrapper--content_swipers-top .text {
   display: flex;
   align-items: flex-end;
   width: 67%;
   margin-right: 40px;
+}
+@media screen and (max-width: 1440px) {
+  .section_design-wrapper--content_swipers-top .text {
+    width: 36%;
+    align-items: end;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .section_design-wrapper--content_swipers-top .text {
+    width: 33%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section_design-wrapper--content_swipers-top .text {
+    margin-top: 50px;
+  }
 }
 .section_design-wrapper--content_swipers-top .text .desc {
   font-size: 20px;
@@ -90,6 +171,11 @@
   flex-direction: column;
   position: relative;
   justify-content: flex-end;
+}
+@media screen and (max-width: 480px) {
+  .section_design-wrapper--content_swipers .card {
+    height: 300px;
+  }
 }
 .section_design-wrapper--content_swipers .card-content {
   display: flex;
@@ -153,6 +239,71 @@
 .section_design-wrapper--content_swipers-bottom {
   width: 62%;
   margin-right: auto;
+}
+@media screen and (max-width: 1280px) {
+  .section_design-wrapper--content_swipers-bottom {
+    width: 70%;
+  }
+}
+.section_design-wrapper--content_swipers-bottom .secondSwiper {
+  padding-top: 50px;
+  width: 100%;
+}
+.section_design-wrapper--content_swipers-bottom .secondSwiper .design-buttons {
+  display: flex;
+  gap: 16px;
+  padding-left: 20px;
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  .section_design-wrapper--content_swipers-bottom .secondSwiper .design-buttons {
+    display: flex;
+  }
+}
+.section_design-wrapper--content_swipers-bottom .secondSwiper .design-buttons button {
+  width: 40px;
+  height: 40px;
+  border-radius: 64px;
+  border: 1px solid #000;
+  cursor: pointer;
+  font-size: 16px;
+  background: transparent;
+}
+.section_design-wrapper--content_swipers-bottom .secondSwiper .design-buttons button svg path {
+  fill: black;
+}
+.section_design-wrapper--content_swipers-bottom .secondSwiper .swiper-pagination {
+  margin: 0 auto;
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  .section_design-wrapper--content_swipers-bottom .secondSwiper .swiper-pagination {
+    display: flex;
+  }
+}
+.section_design-wrapper--content_swipers-bottom .secondSwiper .swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  opacity: 0.6;
+  transition: opacity 0.3s, background-color 0.3s;
+  border: 1px solid grey;
+  background-color: #3A3ADF;
+  margin: 0 auto;
+}
+.section_design-wrapper--content_swipers-bottom .secondSwiper .swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: #fff;
+}
+@media screen and (max-width: 1024px) {
+  .section_design-wrapper--content_swipers-bottom {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section_design-wrapper--content_swipers-bottom {
+    width: 100%;
+  }
 }
 .section_design-wrapper--content_swipers-bottom .swiper-container {
   width: 100%;
@@ -324,6 +475,9 @@
   opacity: 0.6;
   background: #22919F;
   filter: blur(300px);
+}
+.section_design .swiper-button-disabled {
+  opacity: 0.5;
 }
 
 .card-image.no-overlay-image:hover .card-image--content img {

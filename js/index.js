@@ -46,6 +46,39 @@ $(document).ready(function() {
             slidesPerView: 2.6,
             spaceBetween: 0,
             direction: 'horizontal',
+            navigation: {
+                nextEl: '.right-button',
+                prevEl: '.left-button'
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                renderBullet: function (index, className) {
+                  return '<span class="' + className + '"></span>';
+                },
+                dynamicBullets: true,
+              },
+            breakpoints: {
+                1440: {
+                  slidesPerView: 2,
+                  spaceBetween: 32
+                },
+                1280: {
+                    slidesPerView:1.7
+                },
+                1024:{
+                    slidesPerView:2.1,
+                    spaceBetween: 30
+                },
+                768:{
+                    slidesPerView: 1.5,
+                    spaceBetween: 20
+                },
+                480: {
+                    slidesPerView: 1,
+                    spaceBetween:10
+                }
+              }
         });
 
         var newSwiper = new Swiper('.secondSwiper', {
@@ -57,6 +90,38 @@ $(document).ready(function() {
                 var totalSlides = document.querySelectorAll('.secondSwiper .swiper-slide').length;
                 return totalSlides - 1;
             })(),
+            navigation: {
+                nextEl: '.right-button',
+                prevEl: '.left-button'
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                renderBullet: function (index, className) {
+                  return '<span class="' + className + '"></span>';
+                },
+                dynamicBullets: true,
+              },
+
+            breakpoints: {
+                1440: {
+                  slidesPerView: 2,
+                },
+                1280: {
+                    slidesPerView:1.7
+                },
+                1024:{
+                    slidesPerView: 2.1
+                },
+                768: {
+                    slidesPerView: 1.5,
+                    spaceBetween:20
+                },
+                480: {
+                    slidesPerView: 1,
+                    spaceBetween:10
+                }
+              },
         });
 
         $('.card-image').each(function() {

@@ -89,11 +89,93 @@
                     width: 77%;
                     margin-left: auto;
 
+                    @media screen and (max-width:1440px) {
+                        width: 95%;
+                    }
+
+                    @media screen and (max-width:1024px) {
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    @media screen and (max-width:480px) {
+                        width: 100%;
+                    }
+
+                    .firstSwiper {
+                        width: 100%;
+
+                        .design-buttons {
+                            display: flex;
+                            gap: 16px;
+                            padding-left: 20px;
+                            display: none;
+
+                            @media screen and (max-width:480px) {
+                                display: flex;
+                            }
+
+                            button {
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 64px;
+                                border: 1px solid #000;
+                                cursor: pointer;
+                                font-size: 16px;
+                                background: transparent;
+
+                                svg {
+                                    path {
+                                        fill: black;
+                                    }
+                                }
+                            }
+                        }
+
+                        .swiper-pagination {
+                            margin: 0 auto;
+                            display: none;
+
+                            @media screen and (max-width:480px) {
+                                display: flex;
+                            }
+
+                            &-bullet {
+                                width: 13px;
+                                height: 13px;
+                                border-radius: 50%;
+                                opacity: 0.6;
+                                transition: opacity 0.3s, background-color 0.3s;
+                                border: 1px solid grey;
+                                background-color: #3A3ADF;
+                                margin: 0 auto;
+
+                                &-active {
+                                    opacity: 1;
+                                    background-color: #fff
+                                }
+                            }
+                        }
+                    }
+
                     .text {
                         display: flex;
                         align-items: flex-end;
                         width: 67%;
                         margin-right: 40px;
+
+                        @media screen and (max-width:1440px) {
+                            width: 36%;
+                            align-items: end;
+                        }
+
+                        @media screen and (max-width:1280px) {
+                            width: 33%;
+                        }
+
+                        @media screen and (max-width:1024px) {
+                            margin-top: 50px;
+                        }
 
                         .desc {
                             font-size: 20px;
@@ -107,6 +189,10 @@
                     flex-direction: column;
                     position: relative;
                     justify-content: flex-end;
+
+                    @media screen and (max-width:480px) {
+                        height: 300px;
+                    }
 
                     &-content {
                         display: flex;
@@ -182,6 +268,76 @@
                 &-bottom {
                     width: 62%;
                     margin-right: auto;
+
+                    @media screen and (max-width:1280px) {
+                        width: 70%;
+                    }
+
+                    .secondSwiper {
+                        padding-top: 50px;
+                        width: 100%;
+
+                        .design-buttons {
+                            display: flex;
+                            gap: 16px;
+                            padding-left: 20px;
+                            display: none;
+
+                            @media screen and (max-width:480px) {
+                                display: flex;
+                            }
+
+                            button {
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 64px;
+                                border: 1px solid #000;
+                                cursor: pointer;
+                                font-size: 16px;
+                                background: transparent;
+
+                                svg {
+                                    path {
+                                        fill: black;
+                                    }
+                                }
+                            }
+                        }
+
+                        .swiper-pagination {
+                            margin: 0 auto;
+                            display: none;
+
+                            @media screen and (max-width:480px) {
+                                display: flex;
+                            }
+
+                            &-bullet {
+                                width: 13px;
+                                height: 13px;
+                                border-radius: 50%;
+                                opacity: 0.6;
+                                transition: opacity 0.3s, background-color 0.3s;
+                                border: 1px solid grey;
+                                background-color: #3A3ADF;
+                                margin: 0 auto;
+
+                                &-active {
+                                    opacity: 1;
+                                    background-color: #fff
+                                }
+                            }
+                        }
+
+                    }
+
+                    @media screen and (max-width:1024px) {
+                        width: 95%;
+                    }
+
+                    @media screen and (max-width: 480px) {
+                        width: 100%;
+                    }
 
                     .swiper-container {
                         width: 100%;
@@ -403,6 +559,10 @@
         background: #22919F;
 
         filter: blur(300px);
+    }
+
+    .swiper-button-disabled {
+        opacity: 0.5;
     }
 }
 
