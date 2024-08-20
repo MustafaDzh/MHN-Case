@@ -1,23 +1,18 @@
 .section_design {
-    padding-top: 132px;
     position: relative;
     overflow: hidden;
+    padding-top: 132px;
+
+    @media screen and (max-width: 1028px) {
+        padding-top: 70px;
+    }
+
+    @media screen and (max-width: 480px) {
+        padding-top: 50px;
+    }
 
     &-wrapper {
         &--content {
-
-            .title {
-                font-size: 36px;
-                text-transform: uppercase;
-                line-height: 110%;
-            }
-
-            .desc {
-                font-size: 20px;
-                line-height: 130%;
-                height: 140px;
-            }
-
             &_top {
                 max-width: calc(1440px - 2%);
                 margin: 0 auto;
@@ -26,10 +21,13 @@
                     display: flex;
                     flex-direction: column;
                     gap: 91px;
+                    padding: 0px 50px;
+
+                    @media screen and (max-width: 480px) {
+                        gap: 50px;
+                    }
 
                     &--item {
-                        display: flex;
-
                         .text-card {
                             display: flex;
                             flex-direction: column;
@@ -41,6 +39,18 @@
                             &--desc {
                                 font-size: 20px;
                                 line-height: 130%;
+
+                                @media screen and (max-width: 1280px) {
+                                    font-size: 18px;
+                                }
+
+                                @media screen and (max-width: 768px) {
+                                    font-size: 15px;
+                                }
+
+                                @media screen and (max-width: 480px) {
+                                    font-size: 14px;
+                                }
                             }
 
                             &--title {
@@ -48,12 +58,16 @@
                                 line-height: 110%;
                                 text-transform: uppercase;
 
-                                &.second {
-                                    height: 117px;
+                                @media screen and (max-width: 1280px) {
+                                    font-size: 30px;
                                 }
 
-                                @media (max-width: 768px) {
-                                    font-size: 26px;
+                                @media screen and (max-width: 768px) {
+                                    font-size: 24px;
+                                }
+
+                                @media screen and (max-width: 480px) {
+                                    font-size: 18px;
                                 }
                             }
 
@@ -77,6 +91,19 @@
                             &--labels {
                                 display: flex;
                                 justify-content: center;
+
+                                img {
+                                    @media screen and (max-width: 1024px) {
+                                        width: 80%;
+                                    }
+                                    @media screen and (max-width: 768px) {
+                                        width: 70%;
+                                    }
+
+                                    @media screen and (max-width: 480px) {
+                                        width: 60%;
+                                    }
+                                }
                             }
                         }
                     }
@@ -89,16 +116,15 @@
                     width: 77%;
                     margin-left: auto;
 
-                    @media screen and (max-width:1440px) {
+                    @media screen and (max-width: 1440px) {
                         width: 95%;
                     }
 
-                    @media screen and (max-width:1024px) {
-                        display: flex;
+                    @media screen and (max-width: 1024px) {
                         flex-direction: column;
                     }
 
-                    @media screen and (max-width:480px) {
+                    @media screen and (max-width: 480px) {
                         width: 100%;
                     }
 
@@ -106,28 +132,25 @@
                         width: 100%;
 
                         .design-buttons {
-                            display: flex;
+                            display: none;
                             gap: 16px;
                             padding-left: 20px;
-                            display: none;
 
-                            @media screen and (max-width:480px) {
+                            @media screen and (max-width: 480px) {
                                 display: flex;
                             }
 
                             button {
                                 width: 40px;
                                 height: 40px;
-                                border-radius: 64px;
+                                border-radius: 50%;
                                 border: 1px solid #000;
                                 cursor: pointer;
                                 font-size: 16px;
                                 background: transparent;
 
-                                svg {
-                                    path {
-                                        fill: black;
-                                    }
+                                svg path {
+                                    fill: black;
                                 }
                             }
                         }
@@ -136,7 +159,7 @@
                             margin: 0 auto;
                             display: none;
 
-                            @media screen and (max-width:480px) {
+                            @media screen and (max-width: 480px) {
                                 display: flex;
                             }
 
@@ -152,7 +175,17 @@
 
                                 &-active {
                                     opacity: 1;
-                                    background-color: #fff
+                                    background-color: #fff;
+                                }
+                            }
+                        }
+
+                        .card-content {
+
+                            &--left,
+                            &--right {
+                                img {
+                                    width: 100%;
                                 }
                             }
                         }
@@ -164,21 +197,36 @@
                         width: 67%;
                         margin-right: 40px;
 
-                        @media screen and (max-width:1440px) {
+                        @media screen and (max-width: 1440px) {
                             width: 36%;
-                            align-items: end;
                         }
 
-                        @media screen and (max-width:1280px) {
+                        @media screen and (max-width: 1280px) {
                             width: 33%;
                         }
 
-                        @media screen and (max-width:1024px) {
+                        @media screen and (max-width: 1024px) {
                             margin-top: 50px;
+                        }
+
+                        @media screen and (max-width: 768px) {
+                            width: 100%;
                         }
 
                         .desc {
                             font-size: 20px;
+
+                            @media screen and (max-width: 1280px) {
+                                font-size: 18px;
+                            }
+
+                            @media screen and (max-width: 768px) {
+                                font-size: 15px;
+                            }
+
+                            @media screen and (max-width: 480px) {
+                                font-size: 14px;
+                            }
                         }
                     }
                 }
@@ -190,7 +238,7 @@
                     position: relative;
                     justify-content: flex-end;
 
-                    @media screen and (max-width:480px) {
+                    @media screen and (max-width: 480px) {
                         height: 300px;
                     }
 
@@ -202,7 +250,7 @@
                         background: var(--Near-White, #F9F9F9);
                         box-shadow: 0 29px 34px -20px #0000001f;
                         border-radius: 8px;
-                        transition: transform .3s linear, filter .3s linear;
+                        transition: transform 0.3s linear, filter 0.3s linear;
 
                         &--title {
                             width: 130px;
@@ -210,6 +258,18 @@
                             .title {
                                 color: var(--Gunmetal, #2E3140);
                                 font-size: 24px;
+
+                                @media screen and (max-width: 1024px) {
+                                    font-size: 20px;
+                                }
+
+                                @media screen and (max-width: 768px) {
+                                    font-size: 18px;
+                                }
+
+                                @media screen and (max-width: 480px) {
+                                    font-size: 16px;
+                                }
                             }
                         }
 
@@ -229,6 +289,11 @@
                         justify-content: center;
                         max-height: 300px;
 
+                        @media screen and (max-width: 480px) {
+                            bottom: 80px;
+                            left: 80px;
+                        }
+
                         &--content {
                             position: relative;
 
@@ -239,7 +304,7 @@
                                 top: 0;
                                 left: 0;
                                 transform: scale(0);
-                                transition: transform .3s linear, filter .3s linear;
+                                transition: transform 0.3s linear, filter 0.3s linear;
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
@@ -257,11 +322,9 @@
                                 width: 220px;
                                 height: 200px;
                                 display: block;
-                                transition: transform .3s linear, filter .3s linear;
+                                transition: transform 0.3s linear, filter 0.3s linear;
                             }
                         }
-
-
                     }
                 }
 
@@ -269,37 +332,52 @@
                     width: 62%;
                     margin-right: auto;
 
-                    @media screen and (max-width:1280px) {
+                    @media screen and (max-width: 1280px) {
                         width: 70%;
+                    }
+
+                    @media screen and (max-width: 1024px) {
+                        width: 95%;
+                    }
+
+                    @media screen and (max-width: 480px) {
+                        width: 100%;
                     }
 
                     .secondSwiper {
                         padding-top: 50px;
                         width: 100%;
 
+                        .card-content {
+
+                            &--left,
+                            &--right {
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                        }
+
                         .design-buttons {
-                            display: flex;
+                            display: none;
                             gap: 16px;
                             padding-left: 20px;
-                            display: none;
 
-                            @media screen and (max-width:480px) {
+                            @media screen and (max-width: 480px) {
                                 display: flex;
                             }
 
                             button {
                                 width: 40px;
                                 height: 40px;
-                                border-radius: 64px;
+                                border-radius: 50%;
                                 border: 1px solid #000;
                                 cursor: pointer;
                                 font-size: 16px;
                                 background: transparent;
 
-                                svg {
-                                    path {
-                                        fill: black;
-                                    }
+                                svg path {
+                                    fill: black;
                                 }
                             }
                         }
@@ -308,7 +386,7 @@
                             margin: 0 auto;
                             display: none;
 
-                            @media screen and (max-width:480px) {
+                            @media screen and (max-width: 480px) {
                                 display: flex;
                             }
 
@@ -324,19 +402,10 @@
 
                                 &-active {
                                     opacity: 1;
-                                    background-color: #fff
+                                    background-color: #fff;
                                 }
                             }
                         }
-
-                    }
-
-                    @media screen and (max-width:1024px) {
-                        width: 95%;
-                    }
-
-                    @media screen and (max-width: 480px) {
-                        width: 100%;
                     }
 
                     .swiper-container {
@@ -347,7 +416,6 @@
                     .swiper-wrapper {
                         display: flex;
                     }
-
                 }
             }
 
@@ -356,8 +424,8 @@
                 margin: 0 auto;
                 display: flex;
                 flex-direction: column;
-                gap: 125px;
-                padding-top: 164.5px;
+                gap: 187px;
+                padding: 164.5px 50px 0px;
 
                 li {
                     display: flex;
@@ -380,6 +448,7 @@
                             display: flex;
                             flex-direction: column;
                             gap: 49px;
+                            padding-top: 50px;
 
                             &--top {
                                 display: flex;
@@ -398,6 +467,7 @@
                             display: flex;
                             flex-direction: column;
                             gap: 52px;
+                            padding-top: 50px;
 
                             &--bottom {
                                 display: flex;
@@ -412,60 +482,33 @@
                     }
                 }
 
-                &-colors {
-
-                    &-left,
-                    &-right {
-                        display: flex;
-                        flex-direction: column;
-                        gap: 50px;
-
-                        .title {
-                            font-size: 36px;
-                            text-transform: uppercase;
-                            line-height: 110%;
-                        }
-
-                        .buttons {
-                            display: flex;
-                            flex-direction: column;
-                            gap: 12px;
-                        }
-                    }
-                }
-
+                &-colors,
                 &-buttons {
-
-                    &--left,
-                    &--right {
+                    .buttons, .right-buttons {
                         display: flex;
                         flex-direction: column;
-                        gap: 50px;
-                    }
+                        gap: 12px;
+                        margin-top: 50px;
 
-                    .buttons {
                         .fistButton {
                             margin-bottom: 12px;
                         }
                     }
+
+                    .desc{
+                        margin-top: 30px;
+                    }
+
+                    
                 }
 
                 &-icons {
                     display: flex;
                     flex-direction: column;
-                    gap: 36.25px;
-
-                    &--title {
-                        .title {
-                            font-size: 36px;
-                            text-transform: uppercase;
-                            line-height: 110%;
-                        }
-                    }
-
                     &--icon {
                         display: flex;
                         justify-content: space-between;
+                        margin-top: 36.65px;
                     }
                 }
             }
@@ -531,33 +574,33 @@
                         }
                     }
                 }
-
             }
         }
     }
 
-    &-firstBlur {
+    &-firstBlur,
+    &-secondBlur {
         position: absolute;
-        top: -25%;
-        right: -25%;
-        width: 1082.103px;
-        height: 812px;
-        border-radius: 1082.103px;
-        opacity: 0.5;
-        background: #3A3ADF;
+        border-radius: 50%;
         filter: blur(350px);
     }
 
+    &-firstBlur {
+        top: -25%;
+        right: -25%;
+        width: 1082px;
+        height: 812px;
+        opacity: 0.5;
+        background: #3A3ADF;
+    }
+
     &-secondBlur {
-        position: absolute;
         top: 20%;
         left: -60%;
-        width: 1397.938px;
+        width: 1398px;
         height: 1049px;
-        border-radius: 1397.938px;
         opacity: 0.6;
         background: #22919F;
-
         filter: blur(300px);
     }
 
@@ -566,17 +609,19 @@
     }
 }
 
-.card-image.no-overlay-image:hover .card-image--content img {
-    transform: scale(1.2);
-    filter: none;
-}
+.card-image {
+    &.no-overlay-image:hover .card-image--content img {
+        transform: scale(1.2);
+        filter: none;
+    }
 
-.card-image:hover .card-image--content img {
-    transform: scale(0.6);
-    filter: blur(5px);
-}
+    &:hover .card-image--content img {
+        transform: scale(0.6);
+        filter: blur(5px);
+    }
 
-.card-image:hover .card-image--content_on {
-    transform: scale(1);
-    filter: blur(0);
+    &:hover .card-image--content_on {
+        transform: scale(1);
+        filter: blur(0);
+    }
 }

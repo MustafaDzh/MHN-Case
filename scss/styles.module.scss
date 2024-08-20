@@ -2,6 +2,7 @@
 @import "./about.module.scss";
 @import "./overview.module.scss";
 @import "./design.module.scss";
+@import "./sitemap.module.scss";
 
 * {
     padding: 0;
@@ -73,6 +74,7 @@ html body ul {
     max-width: calc(1440px - 2%);
     height: auto;
     margin: 0 auto;
+    padding: 0px 50px;
 }
 
 .page {
@@ -100,5 +102,46 @@ html body ul {
         @media screen and (max-width:480px) {
             font-size: 25px;
         }
+    }
+
+    
+}
+
+.title {
+    font-size: 36px;
+    text-transform: uppercase;
+    line-height: 110%;
+
+    @media screen and (max-width: 1280px) {
+        font-size: 30px;
+    }
+
+    @media screen and (max-width:1024px) {
+        font-size: 27px;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 24px;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 18px;
+    }
+}
+
+.desc {
+    font-size: 20px;
+    line-height: 130%;
+
+    @media screen and (max-width: 1280px) {
+        font-size: 18px;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 15px;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 14px;
     }
 }

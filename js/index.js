@@ -77,6 +77,10 @@ $(document).ready(function() {
                 480: {
                     slidesPerView: 1,
                     spaceBetween:10
+                },
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween:10
                 }
               }
         });
@@ -118,6 +122,10 @@ $(document).ready(function() {
                     spaceBetween:20
                 },
                 480: {
+                    slidesPerView: 1,
+                    spaceBetween:10
+                },
+                0: {
                     slidesPerView: 1,
                     spaceBetween:10
                 }

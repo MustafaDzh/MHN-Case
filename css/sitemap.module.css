@@ -1,0 +1,29 @@
+.section_sitemap-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.section_sitemap-wrapper--map {
+  overflow-x: auto;
+  width: 100%;
+  position: relative;
+}
+.section_sitemap-wrapper--map img {
+  display: block;
+  border-radius: 24px;
+  min-height: 20vh;
+}
+@media screen and (max-width: 768px) {
+  .section_sitemap-wrapper--map img {
+    width: 100%;
+  }
+}
+.section_sitemap-wrapper--map_text {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  z-index: 1;
+  max-width: 50%;
+}
+
+/*# sourceMappingURL=sitemap.module.css.map */

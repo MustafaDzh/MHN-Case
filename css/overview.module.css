@@ -2,6 +2,17 @@
   padding-top: 98px;
   position: relative;
   overflow: hidden;
+  z-index: 2;
+}
+@media screen and (max-width: 1028px) {
+  .section_overview {
+    padding-top: 70px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section_overview {
+    padding-top: 50px;
+  }
 }
 .section_overview-wrapper {
   position: relative;
@@ -12,8 +23,7 @@
   right: 0;
   width: 680px;
   height: 680px;
-  flex-shrink: 0;
-  border-radius: 680px;
+  border-radius: 50%;
   opacity: 0.4;
   background: #45BCCC;
   filter: blur(300px);
@@ -25,28 +35,33 @@
   position: absolute;
   top: 45%;
   right: 0;
+  display: none;
 }
 @media screen and (max-width: 1440px) {
   .section_overview-wrapper--content_top-image {
     display: flex;
     justify-content: flex-end;
-    top: 50%;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .section_overview-wrapper--content_top-image {
-    display: none;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .section_overview-wrapper--content_top-image img {
+    top: 55%;
     width: 80%;
   }
 }
+.section_overview-wrapper--content_top-image img {
+  z-index: 2;
+}
+@media screen and (max-width: 1440px) {
+  .section_overview-wrapper--content_top-image img {
+    width: 90%;
+  }
+}
 @media screen and (max-width: 768px) {
-  .section_overview-wrapper--content_top-image {
+  .section_overview-wrapper--content_top-image img {
     display: none;
   }
+}
+.section_overview-wrapper--content_top-items {
+  display: flex;
+  flex-direction: column;
+  gap: 187px;
 }
 .section_overview-wrapper--content_top-items--item .text-card {
   display: flex;
@@ -55,6 +70,11 @@
   color: #2E3140;
   width: 83%;
 }
+@media screen and (max-width: 1024px) {
+  .section_overview-wrapper--content_top-items--item .text-card {
+    width: 100%;
+  }
+}
 .section_overview-wrapper--content_top-items--item .text-card.third {
   width: 32%;
 }
@@ -62,40 +82,6 @@
   .section_overview-wrapper--content_top-items--item .text-card.third {
     width: 100%;
   }
-}
-@media screen and (max-width: 1024px) {
-  .section_overview-wrapper--content_top-items--item .text-card {
-    width: 100%;
-  }
-}
-.section_overview-wrapper--content_top-items--item .text-card--title {
-  font-size: 36px;
-  line-height: 110%;
-  text-transform: uppercase;
-}
-@media screen and (max-width: 768px) {
-  .section_overview-wrapper--content_top-items--item .text-card--title {
-    font-size: 26px;
-  }
-}
-.section_overview-wrapper--content_top-items--item .text-card--desc {
-  font-size: 20px;
-  line-height: 130%;
-  height: 263px;
-}
-@media screen and (max-width: 768px) {
-  .section_overview-wrapper--content_top-items--item .text-card--desc {
-    font-size: 15px;
-    max-height: 200px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .section_overview-wrapper--content_top-items--item .text-card--desc {
-    font-size: 14px;
-  }
-}
-.section_overview-wrapper--content_top-items--item .text-card--desc span {
-  color: #9DB8D8;
 }
 .section_overview-wrapper--content_bottom-btn {
   display: flex;
@@ -127,7 +113,7 @@
 @media screen and (max-width: 768px) {
   .section_overview-wrapper--content_bottom-icons {
     width: 95%;
-    gap: 50px;
+    gap: 20px;
   }
 }
 .section_overview-wrapper--content_bottom-icons .icon {
@@ -146,41 +132,35 @@
     font-size: 15px;
   }
 }
-.section_overview-firstBlur {
+.section_overview-firstBlur, .section_overview-secondBlur, .section_overview-thirdBlur {
   position: absolute;
+  border-radius: 50%;
+  filter: blur(300px);
+  z-index: 0;
+}
+.section_overview-firstBlur {
   top: 15%;
   right: 0;
   width: 680px;
   height: 680px;
-  border-radius: 680px;
-  opacity: 0.4;
   background: #45BCCC;
-  filter: blur(300px);
-  z-index: 0;
+  opacity: 0.4;
 }
 .section_overview-secondBlur {
-  position: absolute;
   top: 45%;
-  left: 0%;
+  left: 0;
   width: 516px;
   height: 516px;
-  border-radius: 516px;
-  opacity: 0.8;
   background: #259FAD;
-  filter: blur(300px);
-  z-index: 0;
+  opacity: 0.8;
 }
 .section_overview-thirdBlur {
-  position: absolute;
   top: 75%;
-  left: 0%;
+  left: 0;
   width: 554px;
   height: 554px;
-  border-radius: 554px;
-  opacity: 0.8;
   background: #259FAD;
-  filter: blur(300px);
-  z-index: 0;
+  opacity: 0.8;
 }
 
 /*# sourceMappingURL=overview.module.css.map */
