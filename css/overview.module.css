@@ -63,6 +63,11 @@
   flex-direction: column;
   gap: 187px;
 }
+@media screen and (max-width: 480px) {
+  .section_overview-wrapper--content_top-items {
+    gap: 50px;
+  }
+}
 .section_overview-wrapper--content_top-items--item .text-card {
   display: flex;
   flex-direction: column;
@@ -114,6 +119,11 @@
   .section_overview-wrapper--content_bottom-icons {
     width: 95%;
     gap: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section_overview-wrapper--content_bottom-icons {
+    flex-direction: column;
   }
 }
 .section_overview-wrapper--content_bottom-icons .icon {

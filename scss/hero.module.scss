@@ -22,6 +22,10 @@
                 left: 0;
                 transform: rotate(-2deg) translateY(40px);
 
+                @media screen and (max-width:480px) {
+                    height: 50px;
+                }
+
                 &-container {
                     width: 100%;
                     height: 100%;
@@ -35,15 +39,15 @@
                 .swiper-wrapper {
                     display: flex;
                     transition-timing-function: linear;
-                    align-items: center; 
-
-
-                  .swiper-slide {
-                    width: fit-content !important;
-                    display: flex;
                     align-items: center;
-                  }
-                  }
+
+
+                    .swiper-slide {
+                        width: fit-content !important;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
             }
         }
 

@@ -22,6 +22,11 @@
   left: 0;
   transform: rotate(-2deg) translateY(40px);
 }
+@media screen and (max-width: 480px) {
+  .section_hero-wrapper--background_line {
+    height: 50px;
+  }
+}
 .section_hero-wrapper--background_line-container {
   width: 100%;
   height: 100%;

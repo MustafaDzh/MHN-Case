@@ -227,13 +227,13 @@
 }
 @media screen and (max-width: 768px) {
   .section_about-wrapper--content_tape {
-    height: 180px;
+    height: 150px;
   }
 }
 @media screen and (max-width: 480px) {
   .section_about-wrapper--content_tape {
-    height: 150px;
-    margin-top: 30px;
+    height: 100px;
+    margin-top: 50px;
   }
 }
 .section_about-wrapper--content_tape-content {
@@ -264,7 +264,7 @@
 }
 @media screen and (max-width: 768px) {
   .section_about-wrapper--content_tape-content--text.second .title {
-    font-size: 27px;
+    font-size: 20px;
   }
 }
 .section_about-wrapper--content_tape-content--text .title {
@@ -285,12 +285,12 @@
 }
 @media screen and (max-width: 768px) {
   .section_about-wrapper--content_tape-content--text .title {
-    font-size: 27px;
+    font-size: 24px;
   }
 }
 @media screen and (max-width: 480px) {
   .section_about-wrapper--content_tape-content--text .title {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 .section_about-wrapper--content_tape-content--text .btn {
@@ -313,6 +313,11 @@
     padding: 5px;
   }
 }
+@media screen and (max-width: 480px) {
+  .section_about-wrapper--content_tape-content--text .btn {
+    height: 30%;
+  }
+}
 .section_about-wrapper--content_tape-content--text .btn p {
   color: #F4F4F4;
   font-size: 48px;
@@ -331,7 +336,7 @@
 }
 @media screen and (max-width: 768px) {
   .section_about-wrapper--content_tape-content--text .btn p {
-    font-size: 30px;
+    font-size: 27px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -361,6 +366,9 @@
   bottom: 0;
   overflow: hidden;
 }
+.section_about-wrapper--content_tape-content--image_wrapper.third img {
+  height: 115px;
+}
 .section_about-wrapper--content_tape-content--image_wrapper img {
   width: 100%;
   opacity: 0;
@@ -368,17 +376,7 @@
 }
 @media screen and (max-width: 1024px) {
   .section_about-wrapper--content_tape-content--image_wrapper img {
-    height: 350px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .section_about-wrapper--content_tape-content--image_wrapper img {
-    height: 270px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .section_about-wrapper--content_tape-content--image_wrapper img {
-    height: 210px;
+    height: auto;
   }
 }
 .section_about-wrapper--content_tape-content--image_wrapper img.animate {

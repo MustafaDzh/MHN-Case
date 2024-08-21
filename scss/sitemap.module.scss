@@ -10,11 +10,11 @@
 
             img {
                 display: block;
-                border-radius: 24px;
-                min-height: 20vh;
+                min-height: 28vh;
 
-                @media screen and (max-width:768px) {
+                @media screen and (max-width:480px) {
                     width: 100%;
+                    object-fit: cover;
                 }
             }
 
@@ -24,6 +24,10 @@
                 left: 20%; 
                 z-index: 1;  
                 max-width: 50%; 
+
+                @media screen and (max-width:480px) {
+                    display: none;
+                }
             }
         }
 

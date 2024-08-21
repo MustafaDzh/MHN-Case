@@ -9,12 +9,12 @@
 }
 .section_sitemap-wrapper--map img {
   display: block;
-  border-radius: 24px;
-  min-height: 20vh;
+  min-height: 28vh;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .section_sitemap-wrapper--map img {
     width: 100%;
+    object-fit: cover;
   }
 }
 .section_sitemap-wrapper--map_text {
@@ -23,6 +23,11 @@
   left: 20%;
   z-index: 1;
   max-width: 50%;
+}
+@media screen and (max-width: 480px) {
+  .section_sitemap-wrapper--map_text {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=sitemap.module.css.map */

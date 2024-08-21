@@ -62,6 +62,10 @@
                     flex-direction: column;
                     gap: 187px;
 
+                    @media screen and (max-width:480px) {
+                        gap: 50px;
+                    }
+
                     &--item {
                         .text-card {
                             display: flex;
@@ -117,6 +121,10 @@
                     @media screen and (max-width: 768px) {
                         width: 95%;
                         gap: 20px;
+                    }
+
+                    @media screen and (max-width:480px) {
+                        flex-direction: column;
                     }
 
                     .icon {

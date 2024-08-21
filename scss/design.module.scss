@@ -96,12 +96,13 @@
                                     @media screen and (max-width: 1024px) {
                                         width: 80%;
                                     }
+
                                     @media screen and (max-width: 768px) {
                                         width: 70%;
                                     }
 
                                     @media screen and (max-width: 480px) {
-                                        width: 60%;
+                                        width: 100%;
                                     }
                                 }
                             }
@@ -211,6 +212,10 @@
 
                         @media screen and (max-width: 768px) {
                             width: 100%;
+                        }
+
+                        @media screen and (max-width:480px) {
+                            padding: 0px 10px 30px;
                         }
 
                         .desc {
@@ -427,9 +432,19 @@
                 gap: 187px;
                 padding: 164.5px 50px 0px;
 
+                @media screen and (max-width:480px) {
+                    padding-top: 50px;
+                    gap: 50px;
+                }
+
                 li {
                     display: flex;
                     justify-content: space-between;
+
+                    @media screen and (max-width: 480px) {
+                        flex-direction: column;
+                        gap: 50px;
+                    }
                 }
 
                 &-fonts {
@@ -438,6 +453,12 @@
 
                     &--item {
                         width: 60%;
+
+                        .text-card {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 20px
+                        }
                     }
 
                     &--font {
@@ -484,94 +505,47 @@
                             }
                         }
 
-                        .card-right, .card-left{
-                            &--top{
-                                &_title{
-                                    svg{
-                                        @media screen and (max-width:1024px) {
-                                            width: 372px;
-                                        }
+                        .card-right,
+                        .card-left {
+                            &--top {
+                                &_title {
+                                    svg {
+                                        width: 100%;
 
-                                        @media screen and (max-width:768px) {
-                                            width: 332px;
-                                        }
                                         @media screen and (max-width:480px) {
-                                            width: 312px;
+                                            width: 80%;
                                         }
                                     }
                                 }
-                                &_subtitle{
-                                    svg{
-                                        @media screen and (max-width:1024px) {
-                                            width: 299px;
-                                        }
-                                        @media screen and (max-width:768px) {
-                                            width: 259px;
-                                        }
+
+                                &_subtitle {
+                                    svg {
+                                        width: 100%;
+
                                         @media screen and (max-width:480px) {
-                                            width: 199px;
-                                        }
-                                    }
-                                }   
-                            }
-                        }
-                        
-                        .card-left{
-                            &--bottom{
-                                &_subtitle{
-                                    svg{
-                                        @media screen and (max-width:1024px) {
-                                            width: 307px;
-                                        }
-                                        @media screen and (max-width:768px) {
-                                            width: 267px;
-                                        }
-                                        @media screen and (max-width:480px) {
-                                            width: 237px;
-                                        }
-                                    }
-                                }
-                                &_size{
-                                    svg{
-                                        @media screen and (max-width:1024px) {
-                                            width: 95px;
-                                        }
-                                        @media screen and (max-width:1024px) {
-                                            width: 80px;
-                                        }
-                                        @media screen and (max-width:480px) {
-                                            width: 70px;
+                                            width: 50%;
                                         }
                                     }
                                 }
                             }
-                        }
 
-                        .card-right{
-                            &--bottom{
-                                &_subtitle{
-                                    svg{
-                                        @media screen and (max-width:1024px) {
-                                            width: 164px;
+                            &--bottom {
+                                &_subtitle {
+                                    svg {
+                                        width: 100%;
+
+                                        @media screen and (max-width:480px) {
+                                            width: 70%;
                                         }
-                                    }
-                                    @media screen and (max-width:768px) {
-                                        width: 124px;
-                                    }
-                                    @media screen and (max-width:480px) {
-                                        width: 94px;
                                     }
                                 }
-                                &_size{
-                                    svg{
-                                        @media screen and (max-width:1024px) {
-                                            width: 200px;
-                                        }
-                                        @media screen and (max-width:768px) {
-                                            width: 160px;
-                                        }
+
+                                &_size {
+                                    svg {
+                                        width: 100%;
+
                                         @media screen and (max-width:480px) {
-                                            width: 130px;
+                                            width: 40%;
                                         }
                                     }
                                 }
@@ -582,43 +556,74 @@
 
                 &-colors,
                 &-buttons {
-                    .buttons, .right-buttons {
+
+                    .buttons,
+                    .right-buttons {
                         display: flex;
                         flex-direction: column;
                         gap: 12px;
                         margin-top: 50px;
 
+                        @media screen and (max-width:480px) {
+                            margin: 0;
+                        }
+
                         .fistButton {
                             margin-bottom: 12px;
                         }
 
-                        svg{
-                            @media screen and (max-width:1024px) {
-                                width: 400px;
-                            }
+                        svg {
+                            width: 100%;
                         }
                     }
 
-                    .desc{
+                    &--left,
+                    &--right {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 30px;
+                        align-items: flex-start;
+                    }
+
+                    .desc {
                         margin-top: 30px;
 
-                        svg{
+                        svg {
                             @media screen and (max-width:1024px) {
                                 width: 400px;
+                            }
+
+                            @media screen and (max-width:768px) {
+                                width: 350px;
                             }
                         }
                     }
 
-                    
+
+                }
+
+                &-colors {
+                    gap: 50px;
                 }
 
                 &-icons {
                     display: flex;
                     flex-direction: column;
+
                     &--icon {
                         display: flex;
                         justify-content: space-between;
                         margin-top: 36.65px;
+
+                        @media screen and (max-width:480px) {
+                            margin-top: 0px;
+                        }
+
+                        .icon {
+                            svg {
+                                width: 100%;
+                            }
+                        }
                     }
                 }
             }
@@ -629,17 +634,31 @@
                 gap: 60px;
                 padding-top: 105px;
 
+                @media screen and (max-width:480px){
+                    padding-top: 50px;
+                }
+
                 &-title {
                     max-width: calc(1440px - 2%);
                     width: 100%;
                     margin: 0 auto;
                     text-align: left;
+                    padding: 0px 50px;
                 }
 
                 .tape-text {
                     display: flex;
                     align-items: center;
                     justify-content: center;
+
+                    svg {
+                        width: 100%;
+
+                        @media screen and (max-width:480px) {
+                            width: 70%;
+                            padding-top: 20px;
+                        }
+                    }
                 }
 
                 &-container {
@@ -649,6 +668,10 @@
                     display: flex;
                     justify-content: center;
                     position: relative;
+
+                    @media screen and (max-width:480px) {
+                        height: 130px;
+                    }
 
                     &--newLine {
                         align-items: center;
@@ -660,6 +683,10 @@
                         top: -40px;
                         left: 0;
                         transform: rotate(-2deg);
+
+                        @media screen and (max-width:480px) {
+                            height:50px
+                        }
 
                         &_container {
                             width: 100%;
