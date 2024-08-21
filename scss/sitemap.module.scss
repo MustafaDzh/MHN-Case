@@ -20,10 +20,10 @@
 
             &_text {
                 position: absolute;
-                top: 15%; 
-                left: 20%; 
-                z-index: 1;  
-                max-width: 50%; 
+                top: 15%;
+                left: 20%;
+                z-index: 1;
+                max-width: 50%;
 
                 @media screen and (max-width:480px) {
                     display: none;

@@ -35,7 +35,6 @@
                     position: absolute;
                     top: 45%;
                     right: 0;
-                    display: none;
 
                     @media screen and (max-width: 1440px) {
                         display: flex;
@@ -65,11 +64,11 @@
                     @media screen and (max-width:1024px) {
                         gap: 100px;
                     }
-    
+
                     @media screen and (max-width:768px) {
                         gap: 70px;
                     }
-    
+
                     @media screen and (max-width:480px) {
                         gap: 50px;
                     }
@@ -164,18 +163,9 @@
         }
     }
 
-    &-firstBlur,
-    &-secondBlur,
-    &-thirdBlur {
-        position: absolute;
-        border-radius: 50%;
-        filter: blur(300px);
-        z-index: 0;
-    }
-
     &-firstBlur {
         top: 15%;
-        right: 0;
+        right: 30%;
         width: 680px;
         height: 680px;
         background: #45BCCC;

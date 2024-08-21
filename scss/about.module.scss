@@ -307,7 +307,7 @@
                                 padding: 5px;
                             }
 
-                            @media screen and (max-width:480px){
+                            @media screen and (max-width:480px) {
                                 height: 30%;
                             }
 
@@ -360,10 +360,11 @@
                             overflow: hidden;
 
                             &.third {
-                                img{
+                                img {
                                     @media screen and (max-width:768px) {
                                         height: 200px;
                                     }
+
                                     @media screen and (max-width:480px) {
                                         height: 115px;
                                     }

@@ -4,6 +4,7 @@
 @import "./design.module.scss";
 @import "./sitemap.module.scss";
 @import "./desktop.module.scss";
+@import "./mobile.module.scss";
 
 * {
     padding: 0;
@@ -46,19 +47,6 @@ html body {
     font-style: normal;
 }
 
-.unbounded-700 {
-    font-family: "Unbounded", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-}
-
-html body .container {
-    width: 95%;
-    max-width: 1440px;
-    display: block;
-    margin: 0 auto;
-}
 
 html body a {
     color: #fff;
@@ -73,7 +61,6 @@ html body ul {
 .section {
     width: 98%;
     max-width: calc(1440px - 2%);
-    height: auto;
     margin: 0 auto;
     padding: 0px 50px;
 }
@@ -83,35 +70,11 @@ html body ul {
     flex-direction: column;
 }
 
-.section-title {
-    .title {
-        font-size: 48px;
-        line-height: 110%;
-
-        @media screen and (max-width:1280px) {
-            font-size: 44px;
-        }
-
-        @media screen and (max-width:1024px) {
-            font-size: 40px;
-        }
-
-        @media screen and (max-width:768px) {
-            font-size: 32px;
-        }
-
-        @media screen and (max-width:480px) {
-            font-size: 25px;
-        }
-    }
-
-    
-}
-
 .title {
     font-size: 36px;
     text-transform: uppercase;
     line-height: 110%;
+    z-index: 1;
 
     @media screen and (max-width: 1280px) {
         font-size: 30px;
@@ -133,6 +96,7 @@ html body ul {
 .desc {
     font-size: 20px;
     line-height: 130%;
+    z-index: 1;
 
     @media screen and (max-width: 1280px) {
         font-size: 18px;
@@ -145,4 +109,13 @@ html body ul {
     @media screen and (max-width: 480px) {
         font-size: 14px;
     }
+}
+
+.firstBlur,
+.secondBlur,
+.thirdBlur {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(300px);
+    z-index: 0;
 }

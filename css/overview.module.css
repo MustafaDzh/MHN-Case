@@ -35,7 +35,6 @@
   position: absolute;
   top: 45%;
   right: 0;
-  display: none;
 }
 @media screen and (max-width: 1440px) {
   .section_overview-wrapper--content_top-image {
@@ -162,15 +161,9 @@
     font-size: 15px;
   }
 }
-.section_overview-firstBlur, .section_overview-secondBlur, .section_overview-thirdBlur {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(300px);
-  z-index: 0;
-}
 .section_overview-firstBlur {
   top: 15%;
-  right: 0;
+  right: 30%;
   width: 680px;
   height: 680px;
   background: #45BCCC;
