@@ -112,6 +112,58 @@
             }
 
             &_swipers {
+                .firstSwiper, .secondSwiper{
+                    .swiper-pagination {
+                        margin: 0 auto;
+                        display: none;
+                    
+                        @media screen and (max-width: 480px) {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    
+                        &-bullet {
+                            flex: 0 0 13px; 
+                            width: 13px;
+                            height: 13px;
+                            border-radius: 50%;
+                            opacity: 0.6;
+                            transition: opacity 0.3s, background-color 0.3s;
+                            border: 1px solid grey;
+                            background-color: #3A3ADF;
+                            margin: 0 5px;
+                    
+                            &-active {
+                                opacity: 1;
+                                background-color: #fff;
+                            }
+                        }
+                    }
+                    .design-buttons {
+                        display: none;
+                        gap: 16px;
+                        padding-left: 20px;
+
+                        @media screen and (max-width: 480px) {
+                            display: flex;
+                        }
+
+                        button {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            border: 1px solid #000;
+                            cursor: pointer;
+                            font-size: 16px;
+                            background: transparent;
+
+                            svg path {
+                                fill: black;
+                            }
+                        }
+                    }
+                }
                 &-top {
                     display: flex;
                     width: 77%;
@@ -131,56 +183,7 @@
 
                     .firstSwiper {
                         width: 100%;
-
-                        .design-buttons {
-                            display: none;
-                            gap: 16px;
-                            padding-left: 20px;
-
-                            @media screen and (max-width: 480px) {
-                                display: flex;
-                            }
-
-                            button {
-                                width: 40px;
-                                height: 40px;
-                                border-radius: 50%;
-                                border: 1px solid #000;
-                                cursor: pointer;
-                                font-size: 16px;
-                                background: transparent;
-
-                                svg path {
-                                    fill: black;
-                                }
-                            }
-                        }
-
-                        .swiper-pagination {
-                            margin: 0 auto;
-                            display: none;
-
-                            @media screen and (max-width: 480px) {
-                                display: flex;
-                            }
-
-                            &-bullet {
-                                width: 13px;
-                                height: 13px;
-                                border-radius: 50%;
-                                opacity: 0.6;
-                                transition: opacity 0.3s, background-color 0.3s;
-                                border: 1px solid grey;
-                                background-color: #3A3ADF;
-                                margin: 0 auto;
-
-                                &-active {
-                                    opacity: 1;
-                                    background-color: #fff;
-                                }
-                            }
-                        }
-
+                        
                         .card-content {
 
                             &--left,
@@ -354,60 +357,10 @@
                         width: 100%;
 
                         .card-content {
-
                             &--left,
                             &--right {
                                 img {
                                     width: 100%;
-                                }
-                            }
-                        }
-
-                        .design-buttons {
-                            display: none;
-                            gap: 16px;
-                            padding-left: 20px;
-
-                            @media screen and (max-width: 480px) {
-                                display: flex;
-                            }
-
-                            button {
-                                width: 40px;
-                                height: 40px;
-                                border-radius: 50%;
-                                border: 1px solid #000;
-                                cursor: pointer;
-                                font-size: 16px;
-                                background: transparent;
-
-                                svg path {
-                                    fill: black;
-                                }
-                            }
-                        }
-
-                        .swiper-pagination {
-                            margin: 0 auto;
-                            display: none;
-
-                            @media screen and (max-width: 480px) {
-                                display: flex;
-                            }
-
-                            &-bullet {
-                                width: 13px;
-                                height: 13px;
-                                border-radius: 50%;
-                                opacity: 0.6;
-                                transition: opacity 0.3s, background-color 0.3s;
-                                border: 1px solid grey;
-                                background-color: #3A3ADF;
-                                margin: 0 auto;
-
-                                &-active {
-                                    opacity: 1;
-                                    background-color: #fff;
                                 }
                             }
                         }
@@ -431,6 +384,16 @@
                 flex-direction: column;
                 gap: 187px;
                 padding: 164.5px 50px 0px;
+
+                @media screen and (max-width:1024px) {
+                    padding-top: 120px;
+                    gap: 100px;
+                }
+
+                @media screen and (max-width:768px) {
+                    padding-top: 80px;
+                    gap: 70px;
+                }
 
                 @media screen and (max-width:480px) {
                     padding-top: 50px;
@@ -465,6 +428,14 @@
                         display: flex;
                         justify-content: space-between;
 
+                        @media screen and (max-width:1024px) {
+                            gap: 50px;
+                        }
+
+                        @media screen and (max-width:480px) {
+                            gap: 0;
+                        }
+
                         @media screen and (max-width:768px) {
                             flex-direction: column;
                         }
@@ -474,6 +445,10 @@
                             flex-direction: column;
                             gap: 49px;
                             padding-top: 50px;
+
+                            @media screen and (max-width:480px) {
+                                padding-top: 0px;
+                            }
 
                             &--top {
                                 display: flex;
@@ -494,6 +469,14 @@
                             gap: 52px;
                             padding-top: 50px;
 
+                            &--top {
+                                &_title {
+                                    svg {
+                                        margin-bottom: 6px;
+                                    }
+                                }
+                            }
+
                             &--bottom {
                                 display: flex;
                                 flex-direction: column;
@@ -510,8 +493,6 @@
                             &--top {
                                 &_title {
                                     svg {
-                                        width: 100%;
-
                                         @media screen and (max-width:480px) {
                                             width: 80%;
                                         }
@@ -520,8 +501,6 @@
 
                                 &_subtitle {
                                     svg {
-                                        width: 100%;
-
                                         @media screen and (max-width:480px) {
                                             width: 50%;
                                         }
@@ -532,20 +511,16 @@
                             &--bottom {
                                 &_subtitle {
                                     svg {
-                                        width: 100%;
-
                                         @media screen and (max-width:480px) {
-                                            width: 70%;
+                                            width: 50%;
                                         }
                                     }
                                 }
 
                                 &_size {
                                     svg {
-                                        width: 100%;
-
                                         @media screen and (max-width:480px) {
-                                            width: 40%;
+                                            width: 30%;
                                         }
                                     }
                                 }
@@ -620,8 +595,15 @@
                         }
 
                         .icon {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
                             svg {
                                 width: 100%;
+
+                                @media screen and (max-width:480px) {
+                                    width: 80%;
+                                }
                             }
                         }
                     }

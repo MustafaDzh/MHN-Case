@@ -62,6 +62,14 @@
                     flex-direction: column;
                     gap: 187px;
 
+                    @media screen and (max-width:1024px) {
+                        gap: 100px;
+                    }
+    
+                    @media screen and (max-width:768px) {
+                        gap: 70px;
+                    }
+    
                     @media screen and (max-width:480px) {
                         gap: 50px;
                     }
@@ -81,7 +89,7 @@
                             &.third {
                                 width: 32%;
 
-                                @media screen and (max-width:1024px) {
+                                @media screen and (max-width:768px) {
                                     width: 100%;
                                 }
                             }
@@ -97,7 +105,15 @@
                     justify-content: center;
 
                     @media screen and (max-width: 1024px) {
-                        padding-top: 10px;
+                        padding-top: 100px;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        padding-top: 80px;
+                    }
+
+                    @media screen and (max-width: 480px) {
+                        padding-top: 50px;
                     }
 
                     img {

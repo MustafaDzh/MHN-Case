@@ -181,6 +181,10 @@
                     .right {
                         width: 29%;
 
+                        @media screen and (max-width:480px) {
+                            width: 100%;
+                        }
+
                         .subtitle {
                             width: 80%;
                         }
@@ -189,6 +193,10 @@
                     .left {
                         .subtitle {
                             width: 52%;
+
+                            @media screen and (max-width:480px) {
+                                width: 100%;
+                            }
                         }
                     }
                 }
@@ -353,7 +361,12 @@
 
                             &.third {
                                 img{
-                                    height: 115px;
+                                    @media screen and (max-width:768px) {
+                                        height: 200px;
+                                    }
+                                    @media screen and (max-width:480px) {
+                                        height: 115px;
+                                    }
                                 }
                             }
 
