@@ -243,6 +243,10 @@
                         flex-direction: row-reverse;
                     }
 
+                    &.fourth{
+                        flex-direction: row-reverse;
+                    }
+
                     &--text {
                         display: flex;
                         flex-direction: column;
@@ -269,8 +273,7 @@
                         .title {
                             color: #fff;
                             font-size: 40px;
-                            text-transform: uppercase;
-                            line-height: 110%;
+                            width: 60%;
 
                             @media screen and (max-width: 1280px) {
                                 font-size: 35px;
@@ -298,6 +301,14 @@
                             padding: 20px;
                             background: var(--Blue, #9DB8D8);
                             transform: rotate(-2.583deg) translateY(15px);
+
+                            &.fourth{
+                                bottom: 90%;
+
+                                p{
+                                    text-transform: capitalize;
+                                }
+                            }
 
                             @media screen and (max-width: 1280px) {
                                 padding: 15px;
@@ -340,11 +351,6 @@
                         position: relative;
                         width: 90%;
 
-                        &.first {
-                            display: flex;
-                            justify-content: center;
-                        }
-
                         &.third {
                             display: flex;
                             justify-content: flex-end;
@@ -356,7 +362,7 @@
 
                         &_wrapper {
                             position: absolute;
-                            bottom: 0;
+                            bottom: -1.5%;
                             overflow: hidden;
 
                             &.third {
