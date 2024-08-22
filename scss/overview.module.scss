@@ -179,6 +179,16 @@
         height: 680px;
         background: #45BCCC;
         opacity: 0.4;
+
+        @media screen and (max-width:1024px) {
+            width: 48px;
+            height: 48px;
+        }
+
+        @media screen and (max-width:768px) {
+            width: 380px;
+            height: 380px;
+        }
     }
 
     &-secondBlur {
@@ -188,6 +198,21 @@
         height: 516px;
         background: #259FAD;
         opacity: 0.8;
+
+        @media screen and (max-width:1024px) {
+            width: 316px;
+            height: 316px;
+        }
+
+        @media screen and (max-width:768px) {
+            width: 216px;
+            height: 216px;
+        }
+
+        @media screen and (max-width:480px) {
+            width: 116px;
+            height: 116px;
+        }
     }
 
     &-thirdBlur {
@@ -197,5 +222,20 @@
         height: 554px;
         background: #259FAD;
         opacity: 0.8;
+
+        @media screen and (max-width:1024px) {
+            width: 254px;
+            height: 254px;
+        }
+
+        @media screen and (max-width:768px) {
+            width: 154px;
+            height: 154px;
+        }
+
+        @media screen and (max-width:480px) {
+            width: 54px;
+            height: 54px;
+        }
     }
 }

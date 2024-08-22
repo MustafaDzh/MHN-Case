@@ -134,6 +134,21 @@
         height: 464px;
         opacity: 0.8;
         background: #E48049;
+
+        @media screen and (max-width:1024px) {
+            width: 682px;
+            height: 512px;
+        }
+
+        @media screen and (max-width:768px) {
+            width: 582px;
+            height: 412px;
+        }
+
+        @media screen and (max-width:480px) {
+            width: 482px;
+            height: 312px;
+        }
     }
 
     &-secondBlur {
@@ -143,5 +158,20 @@
         height: 916.063px;
         opacity: 0.5;
         background: #3A3ADF;
+
+        @media screen and (max-width:1024px) {
+            width: 682px;
+            height: 512px;
+        }
+
+        @media screen and (max-width:768px) {
+            width: 482px;
+            height: 312px;
+        }
+
+        @media screen and (max-width:480px) {
+            width: 382px;
+            height: 212px;
+        }
     }
 }

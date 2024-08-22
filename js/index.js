@@ -23,10 +23,10 @@ $(document).ready(function() {
         spaceBetween: 70,                      
         loop: true,
         slidesPerView: 'auto',
-        // autoplay: {
-        //     delay: 0, 
-        //     disableOnInteraction: false,
-        // },
+        autoplay: {
+            delay: 0, 
+            disableOnInteraction: false,
+        },
         speed: 5000, 
     });
 
@@ -34,10 +34,21 @@ $(document).ready(function() {
         spaceBetween: 32,                      
         loop: true,
         slidesPerView: 'auto',
-        // autoplay: {
-        //     delay: 0, 
-        //     disableOnInteraction: false,
-        // },
+        autoplay: {
+            delay: 0, 
+            disableOnInteraction: false,
+        },
+        speed: 5000, 
+    });
+
+    var highlightsSwiper = new Swiper('.tape-highlights', {
+        spaceBetween: 70,                      
+        loop: true,
+        slidesPerView: 'auto',
+        autoplay: {
+            delay: 0, 
+            disableOnInteraction: false,
+        },
         speed: 5000, 
     });
 

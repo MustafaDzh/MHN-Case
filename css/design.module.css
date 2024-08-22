@@ -696,6 +696,24 @@
   opacity: 0.5;
   background: #3A3ADF;
 }
+@media screen and (max-width: 1024px) {
+  .section_design-firstBlur {
+    width: 682px;
+    height: 512px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section_design-firstBlur {
+    width: 582px;
+    height: 412px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section_design-firstBlur {
+    width: 482px;
+    height: 312px;
+  }
+}
 .section_design-secondBlur {
   top: 20%;
   left: -40%;
@@ -704,6 +722,24 @@
   opacity: 0.6;
   background: #22919F;
   filter: blur(300px);
+}
+@media screen and (max-width: 1024px) {
+  .section_design-secondBlur {
+    width: 682px;
+    height: 512px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section_design-secondBlur {
+    width: 582px;
+    height: 412px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section_design-secondBlur {
+    width: 482px;
+    height: 312px;
+  }
 }
 .section_design .swiper-button-disabled {
   opacity: 0.5;

@@ -155,7 +155,7 @@
 
                     @media screen and (max-width:1024px) {
                         gap: 70px;
-                    }    
+                    }
 
                     @media screen and (max-width: 768px) {
                         justify-content: center;
@@ -174,9 +174,11 @@
                         @media screen and (max-width:768px) {
                             width: 20%;
                         }
+
                         @media screen and (max-width:480px) {
                             width: 100%;
                         }
+
                         .title {
                             font-size: 64px;
                             color: #9DB8D8;

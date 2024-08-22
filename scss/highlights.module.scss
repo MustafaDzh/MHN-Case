@@ -8,7 +8,6 @@
     }
 
     &-wrapper {
-        position: relative;
         z-index: 2;
 
         &--content {
@@ -16,27 +15,104 @@
             flex-direction: column;
             justify-content: space-between;
             gap: 100px;
+            padding-bottom: 100px;
+
+            @media screen and (max-width:480px) {
+                padding-bottom: 0px;
+            }
 
             &_top {
                 display: flex;
                 gap: 100px;
 
+                @media screen and (max-width:1024px) {
+                    flex-direction: column-reverse;
+                    padding: 0px 50px;
+                }
+
+                &-firstPhoto {
+                    img {
+                        width: 100%;
+
+                        @media screen and (max-width:1024px) {
+                            width: 90%;
+                        }
+
+                        @media screen and (max-width:768px) {
+                            width: 80%;
+                        }
+
+                        @media screen and (max-width:480px) {
+                            width: 70%;
+                        }
+                    }
+                }
 
                 &-title {
                     display: flex;
                     flex-direction: column;
                     gap: 25px;
                     width: 18%;
+
+                    @media screen and (max-width:1024px) {
+                        width: 100%;
+                    }
                 }
             }
 
             &_bottom {
                 display: flex;
-                width: 100%;
                 justify-content: space-between;
+
+                @media screen and (max-width:1024px) {
+                    flex-direction: column;
+                    gap: 50px;
+                    justify-content: center;
+
+                    @media screen and (max-width:768px) {
+                        gap: 20px;
+                    }
+                }
 
                 &-text {
                     width: 33%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 100px;
+
+                    @media screen and (max-width:1024px) {
+                        width: 100%;
+                    }
+                }
+
+                &-secondPhoto {
+                    position: relative;
+
+                    img {
+                        width: 100%;
+
+                        @media screen and (max-width:1024px) {
+                            width: 90%;
+                        }
+
+                        @media screen and (max-width:768px) {
+                            width: 80%;
+                        }
+
+                        @media screen and (max-width:480px) {
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+
+            &_bulletin {
+                position: absolute;
+                bottom: 0;
+                right: 10%;
+
+                @media screen and (max-width:1024px) {
+                    left: 0;
                 }
             }
         }
@@ -50,14 +126,44 @@
         height: 698px;
         opacity: 0.6;
         background: #22919F;
+
+        @media screen and (max-width:1024px) {
+            width: 682px;
+            height: 512px;
+        }
+
+        @media screen and (max-width:768px) {
+            width: 482px;
+            height: 312px;
+        }
+
+        @media screen and (max-width:480px) {
+            width: 382px;
+            height: 212px;
+        }
     }
 
     &-secondBlur {
-        bottom: -15%;
+        bottom: 0%;
         left: -15%;
         width: 482px;
         height: 916px;
         opacity: 0.6;
         background: #22919F;
+
+        @media screen and (max-width:1024px) {
+            width: 682px;
+            height: 512px;
+        }
+
+        @media screen and (max-width:768px) {
+            width: 482px;
+            height: 312px;
+        }
+
+        @media screen and (max-width:480px) {
+            width: 382px;
+            height: 212px;
+        }
     }
 }
