@@ -68,11 +68,16 @@
                             }
 
                             &--desc {
-                                width: 60%;
+                                width: 65%;
+
+                                @media screen and (max-width:1024px) {
+                                    width: 85%;
+                                }
 
                                 @media (max-width: 768px) {
                                     font-size: 15px;
                                     max-height: 200px;
+                                    width: 100%;
                                 }
 
                                 @media (max-width: 480px) {
@@ -198,11 +203,11 @@
                     .text {
                         display: flex;
                         align-items: flex-end;
-                        width: 67%;
+                        width: 25%;
                         margin-right: 40px;
 
                         @media screen and (max-width: 1440px) {
-                            width: 36%;
+                            width: 28%;
                         }
 
                         @media screen and (max-width: 1280px) {
@@ -211,9 +216,6 @@
 
                         @media screen and (max-width: 1024px) {
                             margin-top: 50px;
-                        }
-
-                        @media screen and (max-width: 768px) {
                             width: 100%;
                         }
 
@@ -247,7 +249,7 @@
                     justify-content: flex-end;
 
                     @media screen and (max-width: 480px) {
-                        height: 300px;
+                        height: 280px;
                     }
 
                     &-content {
@@ -401,14 +403,26 @@
                 li {
                     display: flex;
                     justify-content: space-between;
+                    gap: 86px;
 
                     @media screen and (max-width: 480px) {
                         flex-direction: column;
-                        gap: 50px;
+                        gap: 40px;
                     }
 
                     &:first-child {
                         padding-top: 164.5px;
+
+                        @media screen and (max-width:1024px) {
+                            padding-top: 100px;
+                        }
+
+                        @media screen and (max-width:768px) {
+                            padding-top: 80px;
+                        }
+                        @media screen and (max-width:480px) {
+                            padding-top: 50px;
+                        }
                     }
                 }
 
@@ -417,7 +431,7 @@
                     flex-direction: column;
 
                     &--item {
-                        width: 60%;
+                        width: 65%;
 
                         .text-card {
                             display: flex;
@@ -539,7 +553,7 @@
                         display: flex;
                         flex-direction: column;
                         gap: 12px;
-                        margin-top: 50px;
+                        align-items: flex-start;
 
                         @media screen and (max-width:480px) {
                             margin: 0;
@@ -559,6 +573,20 @@
                         display: flex;
                         flex-direction: column;
                         gap: 30px;
+                        width: 100%;
+
+                        &_text{
+                            width: 70%;
+                            display: flex;
+                            justify-content: center;
+
+                            @media screen and (max-width:1024px) {
+                                width: 40%;
+                            }
+                        }
+                    }
+
+                    &--left{
                         align-items: flex-start;
                     }
 
@@ -581,6 +609,13 @@
 
                 &-colors {
                     gap: 50px;
+                    &--right{
+                        padding-left: 70px;
+
+                        @media screen and (max-width:1024px) {
+                            padding-left: 0px;
+                        }
+                    }
                 }
 
                 &-icons {
@@ -605,7 +640,7 @@
                                 width: 100%;
 
                                 @media screen and (max-width:480px) {
-                                    width: 80%;
+                                    width: 70%;
                                 }
                             }
                         }
@@ -631,13 +666,20 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    padding-top: 30px;
 
                     svg {
                         width: 100%;
 
-                        @media screen and (max-width:480px) {
+                        @media screen and (max-width:1024px) {
+                            width: 80%;
+                        }
+                        @media screen and (max-width:768px) {
                             width: 70%;
-                            padding-top: 20px;
+                        }
+
+                        @media screen and (max-width:480px) {
+                            width: 65%;
                         }
                     }
                 }

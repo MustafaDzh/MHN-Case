@@ -59,6 +59,9 @@ $(document).ready(function() {
                 dynamicBullets: true,
               },
             breakpoints: {
+                1920:{
+                    slidesPerView: 2.6
+                },
                 1440: {
                   slidesPerView: 2,
                   spaceBetween: 32
@@ -108,6 +111,9 @@ $(document).ready(function() {
               },
 
             breakpoints: {
+                1920:{
+                    slidesPerView: 2.6
+                },
                 1440: {
                   slidesPerView: 2,
                 },

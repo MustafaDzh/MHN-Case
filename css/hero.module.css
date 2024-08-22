@@ -1,17 +1,18 @@
-.section_hero {
-  height: 85vh;
-  position: relative;
-}
 .section_hero-wrapper {
   position: relative;
   height: 100%;
 }
 .section_hero-wrapper--background {
-  height: 80vh;
+  height: 70vh;
   display: block;
   margin: 0 auto;
   background: url("../images/hero.png") no-repeat center center/cover;
   position: relative;
+}
+@media screen and (min-width: 2560px) {
+  .section_hero-wrapper--background {
+    height: 60vh;
+  }
 }
 .section_hero-wrapper--background_line {
   height: 80px;
@@ -20,11 +21,16 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  transform: rotate(-2deg) translateY(40px);
+  transform: rotate(-1.5deg) translateY(40px);
+}
+@media screen and (max-width: 768px) {
+  .section_hero-wrapper--background_line {
+    height: 50px;
+  }
 }
 @media screen and (max-width: 480px) {
   .section_hero-wrapper--background_line {
-    height: 50px;
+    display: none;
   }
 }
 .section_hero-wrapper--background_line-container {
