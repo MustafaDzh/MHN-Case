@@ -20,6 +20,7 @@
 
 .section_about {
     padding-top: 125px;
+    position: relative;
 
     @media screen and (max-width: 1028px) {
         padding-top: 70px;
@@ -30,6 +31,14 @@
     }
 
     &-wrapper {
+        display: flex;
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
         svg {
             @media screen and (max-width: 480px) {
                 width: 200px;
@@ -453,6 +462,75 @@
                         }
                     }
                 }
+            }
+        }
+
+        &--nav {
+            z-index: 1000;
+            margin-right: 80px;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            right: 0;
+            top: 20%;
+
+            &_content {
+                .line {
+                    width: 1px;
+                    height: 8px;
+                    background: #333;
+                    display: inline-block;
+                }
+
+                .nav-content {
+                    display: flex;
+                    width: 32px;
+                    height: 32px;
+                    padding: 10px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    background: #FFF;
+                    position: relative;
+                    cursor: pointer;
+
+                    &--text {
+                        position: absolute;
+                        display: flex;
+                        justify-content: flex-end;
+                        left: -110px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        opacity: 0;
+                        transition: opacity 0.3s, left 0.4s;
+                        color: #333;
+                        text-align: end;
+                    }
+
+                    &:hover {
+                        background-color: orange;
+
+                        .nav-content--text {
+                            opacity: 1;
+                            color: orange;
+                            width: 100px;
+                        }
+                    }
+                }
+
+                &-stage {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    align-items: center;
+                }
+            }
+
+            &.fixed {
+                position: fixed !important;
+                top: 0;
+                right: 0;
+                z-index: 1000;
             }
         }
     }

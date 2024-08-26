@@ -13,6 +13,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html body {
     cursor: default;
     background-color: #F9F9F9;
@@ -76,6 +80,7 @@ html body ul {
 .page {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .title {

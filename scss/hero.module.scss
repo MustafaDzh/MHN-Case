@@ -1,4 +1,6 @@
 .section_hero {
+    padding-top: 80px;
+
     &-wrapper {
         position: relative;
         height: 100%;
@@ -65,24 +67,27 @@
 
         &--content {
             position: absolute;
-            bottom: 50%;
-            right: 12%;
+            top: 15%;
+            bottom: 0;
+            right: 10%;
             width: 506px;
             display: flex;
             flex-direction: column;
             gap: 70px;
 
-            @media screen and (max-width:1440px) {
-                right: 0%;
+            @media screen and (max-width:1024px) {
+                width: 406px;
+                right: 0;
             }
 
-            @media screen and (max-width:1024px) {
-                display: flex;
-                align-items: center;
+            @media screen and (max-width:768px) {
+                width: 306px;
+                gap: 40px;
             }
 
             @media screen and (max-width:480px) {
-                align-items: flex-end;
+                width: 180px;
+                gap: 30px;
             }
 
             &_headline {
@@ -92,21 +97,26 @@
                     font-size: 90px;
                     color: #fff;
                     line-height: 90%;
+                    text-transform: none;
 
                     @media screen and (max-width:1440px) {
-                        font-size: 70px;
+                        font-size: 77px;
                     }
 
-                    @media screen and (max-width:1440px) {
+                    @media screen and (max-width:1280px) {
+                        font-size: 65px;
+                    }
+
+                    @media screen and (max-width:1024px) {
                         font-size: 60px;
                     }
 
                     @media screen and (max-width:768px) {
-                        font-size: 50px;
+                        font-size: 45px;
                     }
 
                     @media screen and (max-width:480px) {
-                        font-size: 30px;
+                        font-size: 35px;
                     }
 
                     span {
@@ -126,10 +136,16 @@
                 cursor: pointer;
                 border: 1.075px solid #D3FA6D;
 
-                @media screen and (max-width:480px) {
+                @media screen and (max-width:768px) {
                     width: 150px;
-                    padding: 5px 12px;
-                    margin-right: 20px;
+                    height: 35px;
+                    padding: 5px 15px;
+
+                }
+
+                @media screen and (max-width:480px) {
+                    width: 140px;
+                    padding: 3px 10px;
                 }
 
                 p {
@@ -141,6 +157,10 @@
                     font-weight: 800;
                     line-height: normal;
                     text-transform: uppercase;
+
+                    @media screen and (max-width:480px) {
+                        font-size: 8px;
+                    }
                 }
             }
         }
