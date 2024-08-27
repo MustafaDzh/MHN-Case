@@ -335,6 +335,21 @@
                                 transition: transform 0.3s linear, filter 0.3s linear;
                             }
                         }
+
+                        &.no-overlay-image:hover .card-image--content img {
+                            transform: scale(1.2);
+                            filter: none;
+                        }
+
+                        &:hover .card-image--content img {
+                            transform: scale(0.6);
+                            filter: blur(5px);
+                        }
+
+                        &:hover .card-image--content_on {
+                            transform: scale(1);
+                            filter: blur(0);
+                        }
                     }
                 }
 
@@ -763,7 +778,6 @@
             width: 482px;
             height: 312px;
         }
-
     }
 
     &-secondBlur {
@@ -793,22 +807,5 @@
 
     .swiper-button-disabled {
         opacity: 0.5;
-    }
-}
-
-.card-image {
-    &.no-overlay-image:hover .card-image--content img {
-        transform: scale(1.2);
-        filter: none;
-    }
-
-    &:hover .card-image--content img {
-        transform: scale(0.6);
-        filter: blur(5px);
-    }
-
-    &:hover .card-image--content_on {
-        transform: scale(1);
-        filter: blur(0);
     }
 }
