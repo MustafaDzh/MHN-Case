@@ -748,6 +748,16 @@
                                 width: fit-content !important;
                                 display: flex;
                                 align-items: center;
+
+                                .text {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+
+                                    svg {
+                                        transform: rotate(2deg);
+                                    }
+                                }
                             }
                         }
                     }

@@ -60,6 +60,12 @@
                         width: fit-content !important;
                         display: flex;
                         align-items: center;
+
+                        .text {
+                            svg {
+                                transform: rotate(2deg);
+                            }
+                        }
                     }
                 }
             }

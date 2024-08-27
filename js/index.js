@@ -160,32 +160,32 @@ $(document).ready(function () {
     });
 
     var $nav = $('.section_about-wrapper--nav');
-var $wrapper = $('.section_about-wrapper');
-var $sections = $('.section_about, .section_overview, .section_design, .section_sitemap, .section_desktop, .section_mobile, .section_highlights');
-var $navLinks = $('.section_about-wrapper--nav a');
+    var $wrapper = $('.section_about-wrapper');
+    var $sections = $('.section_about, .section_overview, .section_design, .section_sitemap, .section_desktop, .section_mobile, .section_highlights');
+    var $navLinks = $('.section_about-wrapper--nav a');
 
-$(window).on('scroll', function () {
-    var wrapperTop = $wrapper.offset().top;
-    var scrollTop = $(window).scrollTop();
+    $(window).on('scroll', function () {
+        var wrapperTop = $wrapper.offset().top;
+        var scrollTop = $(window).scrollTop();
 
-    if (scrollTop >= wrapperTop) {
-        $nav.addClass('fixed');
-    } else {
-        $nav.removeClass('fixed');
-    }
-
-    $sections.each(function() {
-        var sectionTop = $(this).offset().top; 
-        var sectionBottom = sectionTop + $(this).outerHeight();
-
-        if (scrollTop >= sectionTop && scrollTop < sectionBottom) {
-            var id = $(this).attr('id');
-            var $currentLink = $navLinks.filter('[href="#' + id + '"]');
-
-            $navLinks.removeClass('active'); 
-            $currentLink.addClass('active'); 
+        if (scrollTop >= wrapperTop) {
+            $nav.addClass('fixed');
+        } else {
+            $nav.removeClass('fixed');
         }
+
+        $sections.each(function () {
+            var sectionTop = $(this).offset().top;
+            var sectionBottom = sectionTop + $(this).outerHeight();
+
+            if (scrollTop >= sectionTop && scrollTop < sectionBottom) {
+                var id = $(this).attr('id');
+                var $currentLink = $navLinks.filter('[href="#' + id + '"]');
+
+                $navLinks.removeClass('active');
+                $currentLink.addClass('active');
+            }
+        });
     });
-});
 
 });

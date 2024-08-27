@@ -60,6 +60,9 @@
   display: flex;
   align-items: center;
 }
+.section_hero-wrapper--background_line .swiper-wrapper .swiper-slide .text svg {
+  transform: rotate(2deg);
+}
 .section_hero-wrapper--content {
   position: absolute;
   top: 15%;

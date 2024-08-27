@@ -700,6 +700,14 @@
   display: flex;
   align-items: center;
 }
+.section_design-wrapper--content_tape-container--newLine .swiper-wrapper .swiper-slide .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section_design-wrapper--content_tape-container--newLine .swiper-wrapper .swiper-slide .text svg {
+  transform: rotate(2deg);
+}
 .section_design-firstBlur {
   top: -10%;
   right: -20%;
