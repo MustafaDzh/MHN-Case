@@ -31,6 +31,17 @@
                             gap: 20px;
                             color: #2E3140;
 
+                            &--text {
+                                width: 70%;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 20px;
+
+                                @media screen and (max-width:1024px) {
+                                    width: 100%;
+                                }
+                            }
+
                             &--title,
                             &--desc {
                                 font-size: 20px;
@@ -203,7 +214,7 @@
                     .text {
                         display: flex;
                         align-items: flex-end;
-                        width: 25%;
+                        width: 24%;
                         margin-right: 40px;
 
                         @media screen and (max-width: 1440px) {
@@ -418,7 +429,6 @@
                 li {
                     display: flex;
                     justify-content: space-between;
-                    gap: 86px;
 
                     @media screen and (max-width: 480px) {
                         flex-direction: column;
@@ -448,6 +458,10 @@
 
                     &--item {
                         width: 65%;
+
+                        @media screen and (max-width:480px) {
+                            width: 100%;
+                        }
 
                         .text-card {
                             display: flex;
@@ -680,24 +694,66 @@
                 }
 
                 .tape-text {
-                    display: flex;
-                    align-items: center;
                     justify-content: center;
-                    padding-top: 30px;
+                    color: #FFF;
+                    display: flex;
+                    text-align: center;
+                    padding: 20px 45px 0px 86px;
+                    height: 229px;
+                    width: 883px;
 
-                    svg {
-                        width: 100%;
+                    @media screen and (max-width:1024px) {
+                        width: 800px;
+                    }
 
-                        @media screen and (max-width:1024px) {
-                            width: 80%;
-                        }
+                    @media screen and (max-width:768px) {
+                        padding: 15px 25px 20px 40px;
+                    }
 
-                        @media screen and (max-width:768px) {
-                            width: 70%;
-                        }
+                    @media screen and (max-width:480px) {
+                        height: 130px;
+                    }
+
+                    &--content {
+                        display: flex;
+                        align-items: center;
 
                         @media screen and (max-width:480px) {
-                            width: 65%;
+                            align-items: flex-end;
+                        }
+
+                        .title {
+                            font-size: 32px;
+
+                            @media screen and (max-width:1024px) {
+                                font-size: 28px;
+                            }
+
+                            @media screen and (max-width:768px) {
+                                font-size: 24px;
+                            }
+
+                            @media screen and (max-width:480px) {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+
+                    .firstSvg,
+                    .secondSvg {
+                        svg {
+                            @media screen and (max-width:1024px) {
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .secondSvg {
+                        display: flex;
+                        align-items: flex-end;
+
+                        @media screen and (max-width:480px) {
+                            padding-top: 120px;
                         }
                     }
                 }
@@ -708,6 +764,7 @@
                     height: 280px;
                     display: flex;
                     justify-content: center;
+                    align-items: flex-end;
                     position: relative;
 
                     @media screen and (max-width:480px) {

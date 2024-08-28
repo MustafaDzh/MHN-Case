@@ -81,6 +81,7 @@ html body ul {
     display: flex;
     flex-direction: column;
     position: relative;
+    overflow: hidden;
 }
 
 .title {
@@ -88,6 +89,10 @@ html body ul {
     text-transform: uppercase;
     line-height: 110%;
     z-index: 1;
+
+    span {
+        color: #9DB8D8;
+    }
 
     @media screen and (max-width: 1280px) {
         font-size: 30px;

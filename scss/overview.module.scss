@@ -59,11 +59,6 @@
                 &-items {
                     display: flex;
                     flex-direction: column;
-                    gap: 187px;
-
-                    @media screen and (max-width:1024px) {
-                        gap: 100px;
-                    }
 
                     @media screen and (max-width:768px) {
                         gap: 70px;
@@ -83,6 +78,20 @@
 
                             @media screen and (max-width: 1024px) {
                                 width: 100%;
+                            }
+
+                            .text {
+                                height: 264px;
+
+                                .desc {
+                                    span {
+                                        color: #9DB8D8;
+                                    }
+                                }
+
+                                @media screen and (max-width:768px) {
+                                    height: unset;
+                                }
                             }
 
                             &.third {
@@ -125,8 +134,9 @@
                 &-icons {
                     display: flex;
                     gap: 128px;
-                    width: 70%;
+                    width: 75%;
                     margin: 65px auto;
+                    justify-content: center;
 
                     @media screen and (max-width: 1024px) {
                         width: 90%;
@@ -138,36 +148,52 @@
                         gap: 20px;
                     }
 
-                    @media screen and (max-width:480px) {
+                    @media screen and (max-width: 480px) {
                         flex-direction: column;
                         width: 70%;
+                        align-items: center;
                     }
 
                     .icon {
+                        width: 226px;
                         display: flex;
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
                         gap: 39px;
+                        text-align: center;
 
-                        @media screen and (max-width:768px) {
+                        @media screen and (max-width: 768px) {
                             gap: 30px;
                         }
 
-                        @media screen and (max-width:480px) {
+                        @media screen and (max-width: 480px) {
                             gap: 25px;
                         }
 
-                        .desc {
-                            font-size: 16px;
-                            line-height: 150%;
+                        .icon-svg {
+                            display: flex;
+                            justify-content: center;
+                            width: 100%;
+                        }
 
-                            @media screen and (max-width: 768px) {
-                                font-size: 15px;
+                        .icon-text {
+                            display: flex;
+                            justify-content: center;
+                            width: 100%; 
+
+                            .desc {
+                                font-size: 16px;
+                                line-height: 150%;
+
+                                @media screen and (max-width: 768px) {
+                                    font-size: 15px;
+                                }
                             }
                         }
                     }
                 }
+
             }
         }
     }

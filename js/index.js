@@ -176,7 +176,7 @@ $(document).ready(function () {
 
         $sections.each(function () {
             var sectionTop = $(this).offset().top;
-            var sectionBottom = sectionTop + $(this).outerHeight();
+            var sectionBottom = sectionTop + $(this).outerHeight() ;
 
             if (scrollTop >= sectionTop && scrollTop < sectionBottom) {
                 var id = $(this).attr('id');

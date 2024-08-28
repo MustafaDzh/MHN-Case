@@ -17,13 +17,26 @@
             gap: 100px;
             padding-bottom: 100px;
 
+            @media screen and (max-width:768px) {
+                gap: 70px;
+            }
+
             @media screen and (max-width:480px) {
                 padding-bottom: 0px;
+                gap: 50px;
             }
 
             &_top {
                 display: flex;
                 gap: 100px;
+
+                @media screen and (max-width:768px) {
+                    gap: 70px;
+                }
+
+                @media screen and (max-width:480px) {
+                    gap: 50px;
+                }
 
                 @media screen and (max-width:1024px) {
                     flex-direction: column-reverse;
@@ -52,7 +65,7 @@
                     display: flex;
                     flex-direction: column;
                     gap: 25px;
-                    width: 18%;
+                    width: 340px;
 
                     @media screen and (max-width:1024px) {
                         width: 100%;
@@ -75,18 +88,35 @@
                 }
 
                 &-text {
-                    width: 33%;
+                    width: 45%;
                     display: flex;
                     flex-direction: column;
                     gap: 100px;
 
+                    .desc {
+                        width: 76%;
+                    }
+
                     @media screen and (max-width:1024px) {
                         width: 100%;
+                    }
+
+                    @media screen and (max-width:768px) {
+                        gap: 70px;
+                    }
+
+                    @media screen and (max-width:480px) {
+                        gap: 50px;
                     }
                 }
 
                 &-secondPhoto {
                     position: relative;
+
+                    @media screen and (max-width:480px) {
+                        display: flex;
+                        justify-content: center;
+                    }
 
                     img {
                         width: 100%;
@@ -113,6 +143,11 @@
 
                 @media screen and (max-width:1024px) {
                     left: 0;
+                }
+
+                @media screen and (max-width:480px) {
+                    display: flex;
+                    justify-content: center;
                 }
             }
         }

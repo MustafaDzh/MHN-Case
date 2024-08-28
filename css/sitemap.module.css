@@ -9,10 +9,7 @@
   overflow-x: auto;
   width: 100%;
   position: relative;
-}
-.section_sitemap-wrapper--map img {
-  display: block;
-  min-height: 28vh;
+  height: 100%;
 }
 @media screen and (max-width: 480px) {
   .section_sitemap-wrapper--map img {
@@ -20,9 +17,14 @@
     object-fit: cover;
   }
 }
+@media screen and (max-width: 480px) {
+  .section_sitemap-wrapper--map {
+    height: auto;
+  }
+}
 .section_sitemap-wrapper--map_text {
   position: absolute;
-  top: 15%;
+  top: 10%;
   left: 20%;
   z-index: 1;
   max-width: 1000px;
@@ -47,6 +49,11 @@
   .section_sitemap-wrapper--map_text {
     display: none;
   }
+}
+.section_sitemap-wrapper--map_text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
 }
 
 /*# sourceMappingURL=sitemap.module.css.map */

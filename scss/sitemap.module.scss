@@ -9,20 +9,22 @@
             overflow-x: auto;
             width: 100%;
             position: relative;
+            height: 100%;
 
             img {
-                display: block;
-                min-height: 28vh;
-
                 @media screen and (max-width:480px) {
                     width: 100%;
                     object-fit: cover;
                 }
             }
 
+            @media screen and (max-width:480px) {
+                height: auto;
+            }
+
             &_text {
                 position: absolute;
-                top: 15%;
+                top: 10%;
                 left: 20%;
                 z-index: 1;
                 max-width: 1000px;
@@ -42,6 +44,12 @@
 
                 @media screen and (max-width:480px) {
                     display: none;
+                }
+
+                &-content {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 29px;
                 }
             }
         }

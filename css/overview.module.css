@@ -60,12 +60,6 @@
 .section_overview-wrapper--content_top-items {
   display: flex;
   flex-direction: column;
-  gap: 187px;
-}
-@media screen and (max-width: 1024px) {
-  .section_overview-wrapper--content_top-items {
-    gap: 100px;
-  }
 }
 @media screen and (max-width: 768px) {
   .section_overview-wrapper--content_top-items {
@@ -87,6 +81,17 @@
 @media screen and (max-width: 1024px) {
   .section_overview-wrapper--content_top-items--item .text-card {
     width: 100%;
+  }
+}
+.section_overview-wrapper--content_top-items--item .text-card .text {
+  height: 264px;
+}
+.section_overview-wrapper--content_top-items--item .text-card .text .desc span {
+  color: #9DB8D8;
+}
+@media screen and (max-width: 768px) {
+  .section_overview-wrapper--content_top-items--item .text-card .text {
+    height: unset;
   }
 }
 .section_overview-wrapper--content_top-items--item .text-card.third {
@@ -125,8 +130,9 @@
 .section_overview-wrapper--content_bottom-icons {
   display: flex;
   gap: 128px;
-  width: 70%;
+  width: 75%;
   margin: 65px auto;
+  justify-content: center;
 }
 @media screen and (max-width: 1024px) {
   .section_overview-wrapper--content_bottom-icons {
@@ -144,14 +150,17 @@
   .section_overview-wrapper--content_bottom-icons {
     flex-direction: column;
     width: 70%;
+    align-items: center;
   }
 }
 .section_overview-wrapper--content_bottom-icons .icon {
+  width: 226px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 39px;
+  text-align: center;
 }
 @media screen and (max-width: 768px) {
   .section_overview-wrapper--content_bottom-icons .icon {
@@ -163,12 +172,22 @@
     gap: 25px;
   }
 }
-.section_overview-wrapper--content_bottom-icons .icon .desc {
+.section_overview-wrapper--content_bottom-icons .icon .icon-svg {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.section_overview-wrapper--content_bottom-icons .icon .icon-text {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.section_overview-wrapper--content_bottom-icons .icon .icon-text .desc {
   font-size: 16px;
   line-height: 150%;
 }
 @media screen and (max-width: 768px) {
-  .section_overview-wrapper--content_bottom-icons .icon .desc {
+  .section_overview-wrapper--content_bottom-icons .icon .icon-text .desc {
     font-size: 15px;
   }
 }
