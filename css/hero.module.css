@@ -34,11 +34,6 @@
     height: 50px;
   }
 }
-@media screen and (max-width: 480px) {
-  .section_hero-wrapper--background_line {
-    display: none;
-  }
-}
 .section_hero-wrapper--background_line-container {
   width: 100%;
   height: 100%;
@@ -47,21 +42,44 @@
   display: flex;
   justify-content: center;
 }
-.section_hero-wrapper--background_line-container .tape-hero {
+.section_hero-wrapper--background_line-container .tape-hero, .section_hero-wrapper--background_line-container.tape-fonts, .section_hero-wrapper--background_line-container.tape-recipes {
   height: 100%;
 }
-.section_hero-wrapper--background_line .swiper-wrapper {
+.section_hero-wrapper--background_line-container .tape-hero .swiper-wrapper, .section_hero-wrapper--background_line-container.tape-fonts .swiper-wrapper, .section_hero-wrapper--background_line-container.tape-recipes .swiper-wrapper {
   display: flex;
   transition-timing-function: linear;
   align-items: center;
 }
-.section_hero-wrapper--background_line .swiper-wrapper .swiper-slide {
+.section_hero-wrapper--background_line-container .tape-hero .swiper-wrapper .swiper-slide, .section_hero-wrapper--background_line-container.tape-fonts .swiper-wrapper .swiper-slide, .section_hero-wrapper--background_line-container.tape-recipes .swiper-wrapper .swiper-slide {
   width: fit-content !important;
   display: flex;
   align-items: center;
 }
-.section_hero-wrapper--background_line .swiper-wrapper .swiper-slide .text svg {
+.section_hero-wrapper--background_line-container .tape-hero .swiper-wrapper .swiper-slide .text svg, .section_hero-wrapper--background_line-container.tape-fonts .swiper-wrapper .swiper-slide .text svg, .section_hero-wrapper--background_line-container.tape-recipes .swiper-wrapper .swiper-slide .text svg {
   transform: rotate(2deg);
+}
+@media screen and (max-width: 768px) {
+  .section_hero-wrapper--background_line-container .tape-hero .swiper-wrapper .swiper-slide .text svg, .section_hero-wrapper--background_line-container.tape-fonts .swiper-wrapper .swiper-slide .text svg, .section_hero-wrapper--background_line-container.tape-recipes .swiper-wrapper .swiper-slide .text svg {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section_hero-wrapper--background_line-container .tape-hero .swiper-wrapper .swiper-slide .text svg, .section_hero-wrapper--background_line-container.tape-fonts .swiper-wrapper .swiper-slide .text svg, .section_hero-wrapper--background_line-container.tape-recipes .swiper-wrapper .swiper-slide .text svg {
+    width: 80%;
+  }
+}
+.section_hero-wrapper--background_line-container .tape-hero .swiper-wrapper .swiper-slide .star svg, .section_hero-wrapper--background_line-container.tape-fonts .swiper-wrapper .swiper-slide .star svg, .section_hero-wrapper--background_line-container.tape-recipes .swiper-wrapper .swiper-slide .star svg {
+  transform: rotate(2deg);
+}
+@media screen and (max-width: 768px) {
+  .section_hero-wrapper--background_line-container .tape-hero .swiper-wrapper .swiper-slide .star svg, .section_hero-wrapper--background_line-container.tape-fonts .swiper-wrapper .swiper-slide .star svg, .section_hero-wrapper--background_line-container.tape-recipes .swiper-wrapper .swiper-slide .star svg {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section_hero-wrapper--background_line-container .tape-hero .swiper-wrapper .swiper-slide .star svg, .section_hero-wrapper--background_line-container.tape-fonts .swiper-wrapper .swiper-slide .star svg, .section_hero-wrapper--background_line-container.tape-recipes .swiper-wrapper .swiper-slide .star svg {
+    width: 80%;
+  }
 }
 .section_hero-wrapper--content {
   position: absolute;

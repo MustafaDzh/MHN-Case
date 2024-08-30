@@ -33,10 +33,6 @@
                     height: 50px;
                 }
 
-                @media screen and (max-width:480px) {
-                    display: none;
-                }
-
                 &-container {
                     width: 100%;
                     height: 100%;
@@ -45,25 +41,48 @@
                     display: flex;
                     justify-content: center;
 
-                    .tape-hero {
+                    .tape-hero,
+                    &.tape-fonts,
+                    &.tape-recipes {
                         height: 100%;
-                    }
-                }
 
-                .swiper-wrapper {
-                    display: flex;
-                    transition-timing-function: linear;
-                    align-items: center;
+                        .swiper-wrapper {
+                            display: flex;
+                            transition-timing-function: linear;
+                            align-items: center;
 
+                            .swiper-slide {
+                                width: fit-content !important;
+                                display: flex;
+                                align-items: center;
 
-                    .swiper-slide {
-                        width: fit-content !important;
-                        display: flex;
-                        align-items: center;
+                                .text {
+                                    svg {
+                                        transform: rotate(2deg);
 
-                        .text {
-                            svg {
-                                transform: rotate(2deg);
+                                        @media screen and (max-width:768px) {
+                                            width: 90%;
+                                        }
+
+                                        @media screen and (max-width:480px) {
+                                            width: 80%;
+                                        }
+                                    }
+                                }
+
+                                .star {
+                                    svg {
+                                        transform: rotate(2deg);
+
+                                        @media screen and (max-width:768px) {
+                                            width: 90%;
+                                        }
+
+                                        @media screen and (max-width:480px) {
+                                            width: 80%;
+                                        }
+                                    }
+                                }
                             }
                         }
                     }

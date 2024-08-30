@@ -20,14 +20,19 @@ $(document).ready(function () {
     checkVisibility();
 
     var tapeSwiper = new Swiper('.tape-hero', {
-        spaceBetween: 70,
         loop: true,
+        spaceBetween: 70,
         slidesPerView: 'auto',
         autoplay: {
             delay: 0,
             disableOnInteraction: false,
         },
         speed: 5000,
+        breakpoints: {
+            480: {
+                spaceBetween: 32
+            },
+        }
     });
 
     var fontsSwiper = new Swiper('.tape-fonts', {
@@ -41,8 +46,8 @@ $(document).ready(function () {
         speed: 5000,
     });
 
-    var highlightsSwiper = new Swiper('.tape-highlights', {
-        spaceBetween: 70,
+    var fontsSwiper = new Swiper('.tape-recipes', {
+        spaceBetween: 32,
         loop: true,
         slidesPerView: 'auto',
         autoplay: {
@@ -51,7 +56,6 @@ $(document).ready(function () {
         },
         speed: 5000,
     });
-
     var swiper = new Swiper('.firstSwiper', {
         loop: false,
         slidesPerView: 2.6,
@@ -159,20 +163,11 @@ $(document).ready(function () {
         }
     });
 
-    var $nav = $('.section_about-wrapper--nav');
-    var $wrapper = $('.section_about-wrapper');
-    var $sections = $('.section_about, .section_overview, .section_design, .section_sitemap, .section_desktop, .section_mobile, .section_highlights');
-    var $navLinks = $('.section_about-wrapper--nav a');
+    var $sections = $('#section_about, #section_overview, #section_design, #section_sitemap, #section_desktop, #section_mobile, #section_highlights');
+    var $navLinks = $('.miniNav--nav_content-stage a');
 
     $(window).on('scroll', function () {
-        var wrapperTop = $wrapper.offset().top;
         var scrollTop = $(window).scrollTop();
-
-        // if (scrollTop >= wrapperTop) {
-        //     $nav.addClass('fixed');
-        // } else {
-        //     $nav.removeClass('fixed');
-        // }
 
         $sections.each(function () {
             var sectionTop = $(this).offset().top;
@@ -187,5 +182,4 @@ $(document).ready(function () {
             }
         });
     });
-
 });

@@ -33,12 +33,8 @@
                 height: 110vh;
             }
 
-            @media screen and (max-width:1024px) {
-                height: 105vh;
-            }
-
             @media screen and (max-width:480px) {
-                height: 120vh;
+                height: 130vh;
             }
 
             &_top {
@@ -67,18 +63,16 @@
 
                 @media screen and (max-width:1024px) {
                     width: 400px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
                 }
 
                 @media screen and (max-width:768px) {
                     width: 350px;
                 }
 
-                @media screen and (max-width:1024px) {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    height: 100%;
-                }
             }
         }
 
@@ -105,7 +99,7 @@
             @media screen and (max-width:480px) {
                 left: 0;
                 right: 0;
-                top: 23%;
+                top: 29%;
                 width: 90%;
             }
 
@@ -131,7 +125,7 @@
             }
 
             @media screen and (max-width:480px) {
-                width: 100%;
+                width: 90%;
             }
 
             img {

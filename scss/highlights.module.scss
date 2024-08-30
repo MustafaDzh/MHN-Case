@@ -152,6 +152,72 @@
             }
         }
 
+        &--line {
+            height: 70px;
+            width: 100%;
+            background: #D3FA6D;
+            position: absolute;
+            bottom: 70px;
+            left: 0;
+            transform: rotate(-1.5deg) translateY(40px);
+
+            @media screen and (max-width:768px) {
+                height: 50px;
+            }
+
+            &_container {
+                width: 100%;
+                height: 100%;
+                background-color: #D3FA6D;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+
+                .tape-recipes {
+                    height: 100%;
+
+                    .swiper-wrapper {
+                        display: flex;
+                        transition-timing-function: linear;
+                        align-items: center;
+
+                        .swiper-slide {
+                            width: fit-content !important;
+                            display: flex;
+                            align-items: center;
+
+                            .text {
+                                svg {
+                                    transform: rotate(2deg);
+
+                                    @media screen and (max-width:768px) {
+                                        width: 90%;
+                                    }
+
+                                    @media screen and (max-width:480px) {
+                                        width: 80%;
+                                    }
+                                }
+                            }
+
+                            .star {
+                                svg {
+                                    transform: rotate(2deg);
+
+                                    @media screen and (max-width:768px) {
+                                        width: 90%;
+                                    }
+
+                                    @media screen and (max-width:480px) {
+                                        width: 80%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     &-firstBlur {

@@ -108,7 +108,7 @@
                 }
 
                 &-left {
-                    width: 50%;
+                    width: 90%;
 
                     @media screen and (max-width:1024px) {
                         width: 100%;
@@ -229,7 +229,7 @@
 
                     .left {
                         .subtitle {
-                            width: 55%;
+                            width: 65%;
 
                             @media screen and (max-width:1024px) {
                                 width: 100%;
@@ -274,15 +274,17 @@
 
                 &-content {
                     position: relative;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: flex-end;
 
                     &--text {
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
-                        align-items: center;
+                        align-items: flex-start;
                         height: 100%;
-                        padding-left: 100px;
-                        width: 100%;
+                        width: 50%;
 
                         @media screen and (max-width:768px) {
                             padding-left: 0px;
@@ -315,7 +317,7 @@
 
                         &.second {
                             align-items: flex-start;
-                            padding-left: 50px;
+                            width: 100%;
 
                             .title {
                                 width: 36%;
@@ -434,6 +436,11 @@
                                 }
                             }
                         }
+
+                        &.fifth {
+                            align-items: flex-start;
+                            width: 100%;
+                        }
                     }
 
                     &--image {
@@ -464,9 +471,9 @@
                             }
 
                             @media screen and (max-width:480px) {
-                                height: 220px;
+                                height: 200px;
                                 left: 50px;
-                                width: 400px;
+                                width: 350px;
                             }
                         }
 
@@ -533,8 +540,13 @@
                         &_wrapper {
                             position: relative;
                             width: 518px;
-                            height: 573.643px;
+                            height: 543.643px;
                             overflow: hidden;
+
+                            @media screen and (max-width:1440px) {
+                                width: 450px;
+                                height: 510px;
+                            }
 
                             @media screen and (max-width:1024px) {
                                 width: 400px;
@@ -547,8 +559,8 @@
                             }
 
                             @media screen and (max-width:480px) {
-                                width: 250px;
-                                height: 200px;
+                                width: 180px;
+                                height: 150px;
                             }
 
                             &-img {
@@ -556,6 +568,10 @@
                                 left: 0;
                                 height: 100%;
                                 top: 140px;
+
+                                @media screen and (max-width:480px) {
+                                    top: 0px;
+                                }
 
                                 &.fifth {
                                     width: 80%;
@@ -583,6 +599,10 @@
                                 width: 50%;
                                 display: flex;
                                 align-items: center;
+
+                                @media screen and (max-width:1440px) {
+                                    width: 48%;
+                                }
 
                                 @media screen and (max-width:1024px) {
                                     width: 40%;
@@ -649,31 +669,31 @@
         }
 
         //MINI NAV
-        .miniNav{
+        .miniNav {
             position: absolute;
             top: 8%;
             right: 80px;
-            height: 100%; 
+            height: 100%;
 
             &--nav {
                 position: sticky;
                 top: 0;
-    
+
                 @media screen and (max-width: 1024px) {
                     margin-right: 10px;
                 }
-    
+
                 @media screen and (max-width: 480px) {
                     display: none;
                 }
-    
+
                 &_content {
                     .line {
                         width: 1px;
                         height: 8px;
                         background: #333;
                     }
-    
+
                     .nav-content {
                         display: flex;
                         width: 32px;
@@ -685,17 +705,17 @@
                         position: relative;
                         cursor: pointer;
                         transition: background-color 0.5s ease-in-out;
-    
+
                         @media screen and (max-width: 1024px) {
                             width: 22px;
                             height: 22px;
                         }
-    
+
                         @media screen and (max-width: 768px) {
                             width: 20px;
                             height: 20px;
                         }
-    
+
                         &--text {
                             position: absolute;
                             top: 50%;
@@ -704,33 +724,33 @@
                             opacity: 0;
                             white-space: nowrap;
                             transition: opacity 0.5s ease-in-out, color 0.5s ease-in-out;
-    
+
                             @media screen and (max-width: 1024px) {
                                 font-size: 14px;
                             }
                         }
-    
+
                         &:hover,
                         &.active {
                             background-color: #FFCE34;
-    
+
                             .nav-content--text {
                                 opacity: 1;
                                 color: #FFCE34;
                             }
                         }
                     }
-    
+
                     &-stage {
                         display: flex;
                         flex-direction: column;
                         gap: 8px;
                         align-items: center;
-    
+
                         @media screen and (max-width: 768px) {
                             gap: 5px;
                         }
-    
+
                         p {
                             svg {
                                 @media screen and (max-width: 768px) {
@@ -741,7 +761,7 @@
                         }
                     }
                 }
-    
+
                 &.fixed {
                     position: fixed !important;
                     top: 0;
@@ -750,6 +770,6 @@
                 }
             }
         }
-       
+
     }
 }

@@ -806,16 +806,38 @@
                             display: flex;
                             transition-timing-function: linear;
                             align-items: center;
-        
-        
+
+
                             .swiper-slide {
                                 width: fit-content !important;
                                 display: flex;
                                 align-items: center;
-        
+
                                 .text {
                                     svg {
                                         transform: rotate(2deg);
+
+                                        @media screen and (max-width:768px) {
+                                            width: 90%;
+                                        }
+
+                                        @media screen and (max-width:480px) {
+                                            width: 80%;
+                                        }
+                                    }
+                                }
+
+                                .star {
+                                    svg {
+                                        transform: rotate(2deg);
+
+                                        @media screen and (max-width:768px) {
+                                            width: 90%;
+                                        }
+
+                                        @media screen and (max-width:480px) {
+                                            width: 80%;
+                                        }
                                     }
                                 }
                             }
