@@ -31,7 +31,7 @@ $(document).ready(function () {
     });
 
     var fontsSwiper = new Swiper('.tape-fonts', {
-        spaceBetween: 32,
+        spaceBetween: 70,
         loop: true,
         slidesPerView: 'auto',
         autoplay: {

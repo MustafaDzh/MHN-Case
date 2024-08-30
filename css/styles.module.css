@@ -774,6 +774,7 @@
   position: absolute;
   left: 0;
   height: 100%;
+  top: 140px;
 }
 .section_about-wrapper--content_tape-content--image_wrapper-img.fifth {
   width: 80%;
@@ -1959,6 +1960,9 @@
   width: 100%;
   height: 100%;
   background-color: #D3FA6D;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 .section_design-wrapper--content_tape-container--newLine_container .tape-fonts {
   height: 100%;
@@ -1972,11 +1976,6 @@
   width: fit-content !important;
   display: flex;
   align-items: center;
-}
-.section_design-wrapper--content_tape-container--newLine .swiper-wrapper .swiper-slide .text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .section_design-wrapper--content_tape-container--newLine .swiper-wrapper .swiper-slide .text svg {
   transform: rotate(2deg);
