@@ -20,7 +20,7 @@
 
 .section_about {
     padding-top: 125px;
-    position: relative;
+    // position: relative;
 
     &-wrapper {
 
@@ -649,102 +649,107 @@
         }
 
         //MINI NAV
-        &--nav {
-            z-index: 1000;
-            margin-right: 80px;
+        .miniNav{
             position: absolute;
-            right: 0;
-            top: 12%;
+            top: 8%;
+            right: 80px;
+            height: 100%; 
 
-            @media screen and (max-width: 1024px) {
-                margin-right: 10px;
-            }
-
-            @media screen and (max-width: 480px) {
-                display: none;
-            }
-
-            &_content {
-                .line {
-                    width: 1px;
-                    height: 8px;
-                    background: #333;
+            &--nav {
+                position: sticky;
+                top: 0;
+    
+                @media screen and (max-width: 1024px) {
+                    margin-right: 10px;
                 }
-
-                .nav-content {
-                    display: flex;
-                    width: 32px;
-                    height: 32px;
-                    justify-content: center;
-                    align-items: center;
-                    border-radius: 50%;
-                    background: #FFF;
-                    position: relative;
-                    cursor: pointer;
-                    transition: background-color 0.5s ease-in-out;
-
-                    @media screen and (max-width: 1024px) {
-                        width: 22px;
-                        height: 22px;
+    
+                @media screen and (max-width: 480px) {
+                    display: none;
+                }
+    
+                &_content {
+                    .line {
+                        width: 1px;
+                        height: 8px;
+                        background: #333;
                     }
-
-                    @media screen and (max-width: 768px) {
-                        width: 20px;
-                        height: 20px;
-                    }
-
-                    &--text {
-                        position: absolute;
-                        top: 50%;
-                        right: calc(100% + 10px);
-                        transform: translateY(-50%);
-                        opacity: 0;
-                        white-space: nowrap;
-                        transition: opacity 0.5s ease-in-out, color 0.5s ease-in-out;
-
+    
+                    .nav-content {
+                        display: flex;
+                        width: 32px;
+                        height: 32px;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                        background: #FFF;
+                        position: relative;
+                        cursor: pointer;
+                        transition: background-color 0.5s ease-in-out;
+    
                         @media screen and (max-width: 1024px) {
-                            font-size: 14px;
+                            width: 22px;
+                            height: 22px;
+                        }
+    
+                        @media screen and (max-width: 768px) {
+                            width: 20px;
+                            height: 20px;
+                        }
+    
+                        &--text {
+                            position: absolute;
+                            top: 50%;
+                            right: calc(100% + 10px);
+                            transform: translateY(-50%);
+                            opacity: 0;
+                            white-space: nowrap;
+                            transition: opacity 0.5s ease-in-out, color 0.5s ease-in-out;
+    
+                            @media screen and (max-width: 1024px) {
+                                font-size: 14px;
+                            }
+                        }
+    
+                        &:hover,
+                        &.active {
+                            background-color: #FFCE34;
+    
+                            .nav-content--text {
+                                opacity: 1;
+                                color: #FFCE34;
+                            }
                         }
                     }
-
-                    &:hover,
-                    &.active {
-                        background-color: #FFCE34;
-
-                        .nav-content--text {
-                            opacity: 1;
-                            color: #FFCE34;
+    
+                    &-stage {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+                        align-items: center;
+    
+                        @media screen and (max-width: 768px) {
+                            gap: 5px;
                         }
-                    }
-                }
-
-                &-stage {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 8px;
-                    align-items: center;
-
-                    @media screen and (max-width: 768px) {
-                        gap: 5px;
-                    }
-
-                    p {
-                        svg {
-                            @media screen and (max-width: 768px) {
-                                width: 7px;
-                                height: 8px;
+    
+                        p {
+                            svg {
+                                @media screen and (max-width: 768px) {
+                                    width: 7px;
+                                    height: 8px;
+                                }
                             }
                         }
                     }
                 }
-            }
-
-            &.fixed {
-                position: fixed !important;
-                top: 0;
-                right: 0;
-                z-index: 1000;
+    
+                &.fixed {
+                    position: fixed !important;
+                    top: 0;
+                    right: 0;
+                    z-index: 1000;
+                }
             }
         }
+       
     }
 }

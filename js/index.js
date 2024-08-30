@@ -31,7 +31,7 @@ $(document).ready(function () {
     });
 
     var fontsSwiper = new Swiper('.tape-fonts', {
-        spaceBetween: 70,
+        spaceBetween: 32,
         loop: true,
         slidesPerView: 'auto',
         autoplay: {
@@ -168,15 +168,15 @@ $(document).ready(function () {
         var wrapperTop = $wrapper.offset().top;
         var scrollTop = $(window).scrollTop();
 
-        if (scrollTop >= wrapperTop) {
-            $nav.addClass('fixed');
-        } else {
-            $nav.removeClass('fixed');
-        }
+        // if (scrollTop >= wrapperTop) {
+        //     $nav.addClass('fixed');
+        // } else {
+        //     $nav.removeClass('fixed');
+        // }
 
         $sections.each(function () {
             var sectionTop = $(this).offset().top;
-            var sectionBottom = sectionTop + $(this).outerHeight() ;
+            var sectionBottom = sectionTop + $(this).outerHeight();
 
             if (scrollTop >= sectionTop && scrollTop < sectionBottom) {
                 var id = $(this).attr('id');
