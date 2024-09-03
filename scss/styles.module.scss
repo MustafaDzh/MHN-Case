@@ -21,6 +21,7 @@ html body {
     cursor: default;
     background-color: #F9F9F9;
     color: #2E3140;
+    overflow-x: hidden;
 }
 
 .unbounded-300 {
@@ -80,11 +81,11 @@ html body ul {
     display: flex;
     flex-direction: column;
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
 
     .miniNav {
         position: absolute;
-        top: 1100px;
+        top: 1200px;
         right: 80px;
         height: 100%;
         z-index: 1000;
@@ -232,4 +233,5 @@ html body ul {
     border-radius: 50%;
     filter: blur(300px);
     z-index: -1;
+    // display: none;
 }
