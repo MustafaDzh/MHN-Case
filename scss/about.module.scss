@@ -20,7 +20,6 @@
 
 .section_about {
     padding-top: 125px;
-    // position: relative;
 
     &-wrapper {
 
@@ -144,7 +143,7 @@
                     }
 
                     @media screen and (max-width: 768px) {
-                        justify-content: center;
+                        justify-content: flex-start;
                     }
 
                     @media screen and (max-width: 480px) {
@@ -291,10 +290,6 @@
                             align-items: flex-end;
                         }
 
-                        @media screen and (max-width:480px) {
-                            align-items: flex-end;
-                        }
-
                         .title {
                             @media screen and (max-width:480px) {
                                 display: flex;
@@ -410,7 +405,7 @@
                             }
 
                             @media screen and (max-width:480px) {
-                                height: 30%;
+                                height: 50%;
                             }
 
                             p {
@@ -453,8 +448,12 @@
                             bottom: -25px;
                             left: 50%;
 
+                            @media screen and (max-width:768px) {
+                                bottom: -15px;
+                            }
+
                             @media screen and (max-width:480px) {
-                                bottom: 0px;
+                                bottom: -10px;
                             }
                         }
 
@@ -463,6 +462,20 @@
                             bottom: -50px;
                             transform: rotate(-12.326deg);
                             z-index: 1000;
+
+                            @media screen and (max-width:1280px) {
+                                left: 180px;
+                            }
+
+                            @media screen and (max-width:480px) {
+                                bottom: -30px;
+                                left: 120px;
+                            }
+
+                            @media screen and (max-width:350px) {
+                                left: 80px;
+                                bottom: -20px;
+                            }
                         }
 
                         &.fourth {
@@ -471,26 +484,33 @@
                             transform: rotate(9.906deg);
                             z-index: 1000;
 
-                            @media screen and (max-width:1024px) {
-                                width: 450px;
-                            }
-
                             @media screen and (max-width:768px) {
-                                width: 300px;
-                                bottom: -70px;
+                                bottom: -115px;
                             }
 
                             @media screen and (max-width:480px) {
-                                width: 130px;
-                                bottom: -30px;
+                                bottom: -40px;
+                            }
+
+                            @media screen and (max-width:350px) {
+                                bottom: -35px;
                             }
                         }
 
                         &.fifth {
-                            top: 0px;
+                            bottom: 30px;
                             left: 70%;
 
+                            @media screen and (max-width:1440px) {
+                                left: 60%;
+                            }
+
                             @media screen and (max-width:768px) {
+                                left: 50%;
+                            }
+
+                            @media screen and (max-width:480px) {
+                                left: 45%;
                                 bottom: 0px;
                             }
                         }
@@ -502,23 +522,29 @@
                             overflow: hidden;
 
                             @media screen and (max-width:1440px) {
-                                width: 450px;
-                                height: 510px;
+                                width: 460px;
+                                height: 485px;
                             }
 
                             @media screen and (max-width:1024px) {
-                                width: 400px;
-                                height: 430px;
+                                width: 410px;
+                                height: 435px;
                             }
 
                             @media screen and (max-width:768px) {
-                                height: 350px;
+                                height: 325px;
                                 width: 300px;
+
                             }
 
                             @media screen and (max-width:480px) {
                                 width: 180px;
-                                height: 150px;
+                                height: 205px;
+                            }
+
+                            @media screen and (max-width:350px) {
+                                width: 150px;
+                                height: 175px;
                             }
 
                             &-img {
@@ -528,17 +554,21 @@
                                 top: 140px;
                                 width: 100%;
 
+                                @media screen and (max-width:1024px) {
+                                    top: 100px;
+                                }
+
+                                @media screen and (max-width:768px) {
+                                    top: 120px;
+                                }
+
                                 @media screen and (max-width:480px) {
-                                    top: 0px;
+                                    top: 50px;
                                 }
 
                                 &.fifth {
-                                    top: -70px;
+                                    top: 0px;
                                     overflow: hidden;
-
-                                    @media screen and (max-width:1024px) {
-                                        width: 80%;
-                                    }
                                 }
                             }
 
@@ -557,13 +587,15 @@
                                 }
 
                                 @media screen and (max-width:768px) {
-                                    width: 280px;
-                                    height: 200px;
+                                    width: 250px;
+                                    height: 180px;
                                 }
 
                                 @media screen and (max-width:480px) {
-                                    width: 200px;
-                                    height: 120px;
+                                    max-width: 180px;
+                                    width: 100%;
+                                    max-height: 130px;
+                                    height: 100%;
                                 }
                             }
 
@@ -572,13 +604,29 @@
                                 height: 490px;
                                 z-index: 1000;
 
+                                @media screen and (max-width:1280px) {
+                                    width: 400px;
+                                    height: 450px;
+                                }
+
                                 @media screen and (max-width:1024px) {
                                     width: 300px;
                                     height: 370px;
                                 }
+
                                 @media screen and (max-width:768px) {
                                     width: 200px;
-                                    height: 270px;
+                                    height: 280px;
+                                }
+
+                                @media screen and (max-width:480px) {
+                                    max-width: 100px;
+                                    height: auto;
+                                }
+
+                                @media screen and (max-width:350px) {
+                                    max-width: 90px;
+                                    height: auto;
                                 }
                             }
 
@@ -588,7 +636,22 @@
 
                                 @media screen and (max-width:1024px) {
                                     width: 250px;
-                                    height: 350px;
+                                    height: 370px;
+                                }
+
+                                @media screen and (max-width:768px) {
+                                    width: 200px;
+                                    height: 300px;
+                                }
+
+                                @media screen and (max-width:480px) {
+                                    height: auto;
+                                    width: 100px;
+                                }
+
+                                @media screen and (max-width:350px) {
+                                    max-width: 90px;
+                                    height: auto;
                                 }
                             }
 
@@ -600,22 +663,27 @@
                             }
 
                             &.fifth {
-                                width: 415.415px;
-                                height: 335.278px;
+                                width: 435.415px;
+                                height: 344.278px;
 
                                 @media screen and (max-width:1024px) {
                                     width: 335px;
-                                    height: 264px;
+                                    height: 255px;
                                 }
 
                                 @media screen and (max-width:768px) {
-                                    width: 300px;
-                                    height: 220px;
+                                    width: 281px;
+                                    height: 200px;
                                 }
 
                                 @media screen and (max-width:480px) {
+                                    width: 220px;
+                                    height: 140px;
+                                }
+
+                                @media screen and (max-width:350px) {
                                     width: 200px;
-                                    height: 200px;
+                                    height: 120px;
                                 }
                             }
 
@@ -624,10 +692,6 @@
                                 height: 100%;
                                 opacity: 0;
                                 transition: opacity 0.3s ease;
-
-                                @media screen and (max-width: 1024px) {
-                                    height: auto;
-                                }
 
                                 &.animate {
                                     animation: bounceIn 2s ease forwards;

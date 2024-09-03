@@ -3,14 +3,15 @@
 }
 .section_hero-wrapper {
   position: relative;
-  height: 100%;
 }
 .section_hero-wrapper--background {
   height: 70vh;
-  display: block;
-  margin: 0 auto;
   background: url("../images/hero.png") no-repeat center center/cover;
-  position: relative;
+}
+@media screen and (max-width: 1024px) {
+  .section_hero-wrapper--background {
+    height: 50vh;
+  }
 }
 @media screen and (min-width: 2560px) {
   .section_hero-wrapper--background {
@@ -35,12 +36,7 @@
   }
 }
 .section_hero-wrapper--background_line-container {
-  width: 100%;
   height: 100%;
-  background-color: #D3FA6D;
-  align-items: center;
-  display: flex;
-  justify-content: center;
 }
 .section_hero-wrapper--background_line-container .tape-hero, .section_hero-wrapper--background_line-container.tape-fonts, .section_hero-wrapper--background_line-container.tape-recipes {
   height: 100%;
@@ -108,9 +104,6 @@
     width: 180px;
     gap: 30px;
   }
-}
-.section_hero-wrapper--content_headline {
-  width: 30%;
 }
 .section_hero-wrapper--content_headline .title {
   font-size: 90px;

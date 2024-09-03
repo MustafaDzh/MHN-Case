@@ -2,7 +2,6 @@
   padding-top: 98px;
   position: relative;
   overflow: hidden;
-  z-index: 2;
 }
 @media screen and (max-width: 1028px) {
   .section_overview {
@@ -16,17 +15,6 @@
 }
 .section_overview-wrapper {
   position: relative;
-}
-.section_overview-wrapper--circle {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 680px;
-  height: 680px;
-  border-radius: 50%;
-  opacity: 0.4;
-  background: #45BCCC;
-  filter: blur(300px);
 }
 .section_overview-wrapper--content_top {
   position: relative;
@@ -192,8 +180,8 @@
   }
 }
 .section_overview-firstBlur {
-  top: 15%;
-  right: 30%;
+  top: 5%;
+  right: 20%;
   width: 680px;
   height: 680px;
   background: #45BCCC;

@@ -152,6 +152,11 @@
   opacity: 1;
   background-color: #fff;
 }
+.section_design-wrapper--content_swipers .firstSwiper .swiper-wrapper .swiper-slide,
+.section_design-wrapper--content_swipers .secondSwiper .swiper-wrapper .swiper-slide {
+  max-width: 499.209px;
+  width: 100%;
+}
 .section_design-wrapper--content_swipers .firstSwiper .design-buttons,
 .section_design-wrapper--content_swipers .secondSwiper .design-buttons {
   display: none;
@@ -305,12 +310,6 @@
   justify-content: center;
   max-height: 300px;
 }
-@media screen and (max-width: 480px) {
-  .section_design-wrapper--content_swipers .card-image {
-    bottom: 80px;
-    left: 80px;
-  }
-}
 .section_design-wrapper--content_swipers .card-image--content {
   position: relative;
 }
@@ -334,10 +333,18 @@
 }
 .section_design-wrapper--content_swipers .card-image--content img {
   object-fit: contain;
-  width: 220px;
-  height: 200px;
+  max-width: 220px;
+  width: 100%;
+  max-height: 200px;
+  height: 100%;
   display: block;
   transition: transform 0.3s linear, filter 0.3s linear;
+}
+@media screen and (max-width: 480px) {
+  .section_design-wrapper--content_swipers .card-image--content img {
+    max-width: 170px;
+    max-height: 150px;
+  }
 }
 .section_design-wrapper--content_swipers .card-image.no-overlay-image:hover .card-image--content img {
   transform: scale(1.2);

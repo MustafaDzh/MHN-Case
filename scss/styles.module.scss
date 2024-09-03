@@ -75,19 +75,23 @@ html body ul {
     max-width: calc(1440px - 2%);
     margin: 0 auto;
     padding: 0px 50px;
+
+    @media screen and (max-width:350px) {
+        padding: 0px 10px;
+    }
 }
 
 .page {
     display: flex;
     flex-direction: column;
     position: relative;
-    // overflow: hidden;
+    overflow: hidden;
 
     .miniNav {
         position: absolute;
         top: 1200px;
         right: 80px;
-        height: 100%;
+        height: calc(100% - 1200px);
         z-index: 1000;
 
         @media screen and (max-width:1440px) {
@@ -233,5 +237,4 @@ html body ul {
     border-radius: 50%;
     filter: blur(300px);
     z-index: -1;
-    // display: none;
 }

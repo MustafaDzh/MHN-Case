@@ -46,7 +46,7 @@ $(document).ready(function () {
         speed: 5000,
     });
 
-    var fontsSwiper = new Swiper('.tape-recipes', {
+    var recipesSwiper = new Swiper('.tape-recipes', {
         spaceBetween: 32,
         loop: true,
         slidesPerView: 'auto',
@@ -58,12 +58,17 @@ $(document).ready(function () {
     });
     var swiper = new Swiper('.firstSwiper', {
         loop: false,
-        slidesPerView: 2.6,
+        slidesPerView: 'auto',
         spaceBetween: 0,
         direction: 'horizontal',
+        speed: 800,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
         navigation: {
-            nextEl: '.right-button',
-            prevEl: '.left-button'
+            nextEl: '.right-button--first',
+            prevEl: '.left-button--first'
         },
         pagination: {
             el: '.swiper-pagination',
@@ -74,30 +79,16 @@ $(document).ready(function () {
             dynamicBullets: true,
         },
         breakpoints: {
-            1920: {
-                slidesPerView: 2.6
-            },
             1440: {
-                slidesPerView: 2,
                 spaceBetween: 32
             },
-            1280: {
-                slidesPerView: 1.7
-            },
             1024: {
-                slidesPerView: 2.1,
                 spaceBetween: 30
             },
             768: {
-                slidesPerView: 1.5,
                 spaceBetween: 20
             },
             480: {
-                slidesPerView: 1,
-                spaceBetween: 10
-            },
-            0: {
-                slidesPerView: 1,
                 spaceBetween: 10
             }
         }
@@ -106,15 +97,21 @@ $(document).ready(function () {
     var newSwiper = new Swiper('.secondSwiper', {
         spaceBetween: 32,
         loop: false,
-        slidesPerView: 2.5,
+        slidesPerView: 'auto',
         direction: 'horizontal',
         initialSlide: (function () {
             var totalSlides = document.querySelectorAll('.secondSwiper .swiper-slide').length;
             return totalSlides - 1;
         })(),
+        speed: 800,
+        autoplay: {
+            delay: 3000, 
+            disableOnInteraction: false, 
+            reverseDirection: true, 
+        },
         navigation: {
-            nextEl: '.right-button',
-            prevEl: '.left-button'
+            nextEl: '.right-button--second',
+            prevEl: '.left-button--second'
         },
         pagination: {
             el: '.swiper-pagination',
@@ -126,31 +123,29 @@ $(document).ready(function () {
         },
 
         breakpoints: {
-            1920: {
-                slidesPerView: 2.6
-            },
-            1440: {
-                slidesPerView: 2,
-            },
-            1280: {
-                slidesPerView: 1.7
-            },
-            1024: {
-                slidesPerView: 2.1
-            },
             768: {
-                slidesPerView: 1.5,
                 spaceBetween: 20
             },
             480: {
-                slidesPerView: 1,
-                spaceBetween: 10
-            },
-            0: {
-                slidesPerView: 1,
                 spaceBetween: 10
             }
         },
+    });
+
+    $('.left-button-first').on('click', function() {
+        swiper.slidePrev(); 
+    });
+    
+    $('.right-button-first').on('click', function() {
+        swiper.slideNext(); 
+    });
+    
+    $('.left-button-second').on('click', function() {
+        newSwiper.slidePrev(); 
+    });
+    
+    $('.right-button-second').on('click', function() {
+        newSwiper.slideNext(); 
     });
 
     $('.card-image').each(function () {
