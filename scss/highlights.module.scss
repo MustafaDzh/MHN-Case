@@ -22,13 +22,17 @@
             }
 
             @media screen and (max-width:480px) {
-                padding-bottom: 0px;
+                padding-bottom: 80px;
                 gap: 50px;
             }
 
             &_top {
                 display: flex;
                 gap: 100px;
+
+                @media screen and (max-width:1280px) {
+                    padding: 0px 50px;
+                }
 
                 @media screen and (max-width:768px) {
                     gap: 70px;

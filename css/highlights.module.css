@@ -25,13 +25,18 @@
 }
 @media screen and (max-width: 480px) {
   .section_highlights-wrapper--content {
-    padding-bottom: 0px;
+    padding-bottom: 80px;
     gap: 50px;
   }
 }
 .section_highlights-wrapper--content_top {
   display: flex;
   gap: 100px;
+}
+@media screen and (max-width: 1280px) {
+  .section_highlights-wrapper--content_top {
+    padding: 0px 50px;
+  }
 }
 @media screen and (max-width: 768px) {
   .section_highlights-wrapper--content_top {
