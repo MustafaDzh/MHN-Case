@@ -812,6 +812,12 @@
     height: 370px;
   }
 }
+@media screen and (max-width: 768px) {
+  .section_about-wrapper--content_tape-content--image_wrapper.third {
+    width: 200px;
+    height: 270px;
+  }
+}
 .section_about-wrapper--content_tape-content--image_wrapper.fourth {
   width: 300px;
   height: 440px;
