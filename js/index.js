@@ -67,8 +67,8 @@ $(document).ready(function () {
             disableOnInteraction: false,
         },
         navigation: {
-            nextEl: '.right-button--first',
-            prevEl: '.left-button--first'
+            nextEl: '.next-button--first',
+            prevEl: '.prev-button--first'
         },
         pagination: {
             el: '.swiper-pagination',
@@ -110,8 +110,8 @@ $(document).ready(function () {
             reverseDirection: true,
         },
         navigation: {
-            nextEl: '.right-button--second',
-            prevEl: '.left-button--second'
+            nextEl: '.next-button--second',
+            prevEl: '.prev-button--second'
         },
         pagination: {
             el: '.swiper-pagination',
@@ -130,22 +130,6 @@ $(document).ready(function () {
                 spaceBetween: 10
             }
         },
-    });
-
-    $('.left-button-first').on('click', function () {
-        swiper.slidePrev();
-    });
-
-    $('.right-button-first').on('click', function () {
-        swiper.slideNext();
-    });
-
-    $('.left-button-second').on('click', function () {
-        newSwiper.slidePrev();
-    });
-
-    $('.right-button-second').on('click', function () {
-        newSwiper.slideNext();
     });
 
     $('.card-image').each(function () {
