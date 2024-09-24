@@ -1000,13 +1000,6 @@
     font-size: 14px;
   }
 }
-.section_about-wrapper .miniNav--nav_content .nav-content:hover, .section_about-wrapper .miniNav--nav_content .nav-content.active {
-  background-color: #FFCE34;
-}
-.section_about-wrapper .miniNav--nav_content .nav-content:hover .nav-content--text, .section_about-wrapper .miniNav--nav_content .nav-content.active .nav-content--text {
-  opacity: 1;
-  color: #FFCE34;
-}
 .section_about-wrapper .miniNav--nav_content-stage {
   display: flex;
   flex-direction: column;
@@ -2892,8 +2885,14 @@ html body ul {
   height: calc(100% - 1200px);
   z-index: 1000;
 }
+@media screen and (max-width: 1920px) {
+  .page .miniNav {
+    top: 1100px;
+  }
+}
 @media screen and (max-width: 1440px) {
   .page .miniNav {
+    top: 1000px;
     right: 50px;
   }
 }
