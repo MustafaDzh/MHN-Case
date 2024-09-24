@@ -185,6 +185,11 @@ html body ul {
                     }
                 }
             }
+
+            &.fixed {
+                position: fixed !important;
+                z-index: 1000;
+            }
         }
     }
 }
