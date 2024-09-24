@@ -2894,6 +2894,11 @@ html body ul {
   right: 80px;
   top: 0;
 }
+@media screen and (max-width: 1440px) {
+  .page .miniNav--nav_content.fixed {
+    right: 50px;
+  }
+}
 
 .title {
   font-size: 36px;

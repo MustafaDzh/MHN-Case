@@ -191,6 +191,10 @@ html body ul {
                     z-index: 1000;
                     right: 80px;
                     top: 0;
+
+                    @media screen and (max-width:1440px) {
+                        right: 50px;
+                    }
                 }
             }
         }
