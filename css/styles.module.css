@@ -2791,6 +2791,7 @@ html body ul {
   display: flex;
   flex-direction: column;
   position: relative;
+  overflow: hidden;
 }
 .page .miniNav {
   position: absolute;
@@ -2810,15 +2811,15 @@ html body ul {
     right: 50px;
   }
 }
-.page .miniNav--nav {
-  position: sticky;
-  top: 0;
-}
 @media screen and (max-width: 1024px) {
   .page .miniNav--nav {
     margin-right: 10px;
     display: none;
   }
+}
+.page .miniNav--nav_content {
+  position: sticky;
+  top: 0;
 }
 .page .miniNav--nav_content .line {
   width: 1px;
@@ -2887,9 +2888,11 @@ html body ul {
     height: 8px;
   }
 }
-.page .miniNav--nav.fixed {
+.page .miniNav--nav_content.fixed {
   position: fixed !important;
   z-index: 1000;
+  right: 80px;
+  top: 0;
 }
 
 .title {

@@ -85,6 +85,7 @@ html body ul {
     display: flex;
     flex-direction: column;
     position: relative;
+    overflow: hidden;
 
     .miniNav {
         position: absolute;
@@ -103,15 +104,15 @@ html body ul {
         }
 
         &--nav {
-            position: sticky;
-            top: 0;
-
             @media screen and (max-width: 1024px) {
                 margin-right: 10px;
                 display: none;
             }
 
             &_content {
+                position: sticky;
+                top: 0;
+
                 .line {
                     width: 1px;
                     height: 8px;
@@ -184,11 +185,13 @@ html body ul {
                         }
                     }
                 }
-            }
 
-            &.fixed {
-                position: fixed !important;
-                z-index: 1000;
+                &.fixed {
+                    position: fixed !important;
+                    z-index: 1000;
+                    right: 80px;
+                    top: 0;
+                }
             }
         }
     }

@@ -160,7 +160,7 @@ $(document).ready(function () {
 
     var $sections = $('#section_about, #section_overview, #section_design, #section_sitemap, #section_desktop, #section_mobile, #section_highlights');
     var $navLinks = $('.miniNav--nav_content-stage a');
-    var $nav = $('.miniNav--nav');
+    var $nav = $('.miniNav--nav_content');
     var navOffsetTop = $nav.offset().top;
 
     $(window).on('scroll', function () {
