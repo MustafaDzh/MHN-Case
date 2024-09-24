@@ -57,7 +57,7 @@ $(document).ready(function () {
         speed: 5000,
     });
     var swiper = new Swiper('.firstSwiper', {
-        loop: false,
+        loop: true,
         slidesPerView: 'auto',
         spaceBetween: 0,
         direction: 'horizontal',
@@ -96,7 +96,7 @@ $(document).ready(function () {
 
     var newSwiper = new Swiper('.secondSwiper', {
         spaceBetween: 32,
-        loop: false,
+        loop: true,
         slidesPerView: 'auto',
         direction: 'horizontal',
         initialSlide: (function () {
@@ -105,9 +105,9 @@ $(document).ready(function () {
         })(),
         speed: 800,
         autoplay: {
-            delay: 3000, 
-            disableOnInteraction: false, 
-            reverseDirection: true, 
+            delay: 3000,
+            disableOnInteraction: false,
+            reverseDirection: true,
         },
         navigation: {
             nextEl: '.right-button--second',
@@ -132,20 +132,20 @@ $(document).ready(function () {
         },
     });
 
-    $('.left-button-first').on('click', function() {
-        swiper.slidePrev(); 
+    $('.left-button-first').on('click', function () {
+        swiper.slidePrev();
     });
-    
-    $('.right-button-first').on('click', function() {
-        swiper.slideNext(); 
+
+    $('.right-button-first').on('click', function () {
+        swiper.slideNext();
     });
-    
-    $('.left-button-second').on('click', function() {
-        newSwiper.slidePrev(); 
+
+    $('.left-button-second').on('click', function () {
+        newSwiper.slidePrev();
     });
-    
-    $('.right-button-second').on('click', function() {
-        newSwiper.slideNext(); 
+
+    $('.right-button-second').on('click', function () {
+        newSwiper.slideNext();
     });
 
     $('.card-image').each(function () {
@@ -165,16 +165,20 @@ $(document).ready(function () {
         var scrollTop = $(window).scrollTop();
 
         $sections.each(function () {
-            var sectionTop = $(this).offset().top;
-            var sectionBottom = sectionTop + $(this).outerHeight();
+            var $section = $(this); 
+            var sectionTop = $section.offset().top;
+            var sectionBottom = sectionTop + $section.outerHeight();
 
             if (scrollTop >= sectionTop && scrollTop < sectionBottom) {
-                var id = $(this).attr('id');
+                var id = $section.attr('id');
                 var $currentLink = $navLinks.filter('[href="#' + id + '"]');
 
-                $navLinks.removeClass('active');
-                $currentLink.addClass('active');
+                if (!$currentLink.hasClass('active')) {  
+                    $navLinks.removeClass('active');
+                    $currentLink.addClass('active');
+                }
             }
         });
     });
+
 });
